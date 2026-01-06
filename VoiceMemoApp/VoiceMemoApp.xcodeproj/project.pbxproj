@@ -1,0 +1,206 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20FFD8581ECAB88152F1E099 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA62C95A493908053FB013 /* StorageManager.swift */; };
+		2D492BEF25191E99C8C266EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5003134BD6A40CDC2158081 /* Assets.xcassets */; };
+		76FA5256AD6537FAA152D15C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695E00E2D89F4461F204F75 /* ContentView.swift */; };
+		771D8CC31AE6D2B38BF90D9B /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6B9C4FD22F9B0CE7671D6 /* RecordingView.swift */; };
+		AF12B2115F6663D009E802C7 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A98CD9F91FC6E67872FB89 /* AudioManager.swift */; };
+		F166A7A1364F74D0A0C1083A /* VoiceMemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B4CD29A589FAEBABFE33DE /* VoiceMemoAppApp.swift */; };
+		F881DD02072F79A3B6498823 /* VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B8D55A1B601DDF20003AE /* VoiceMemo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		222B539FFB5315B3B88EACAA /* VoiceMemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6B8D55A1B601DDF20003AE /* VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemo.swift; sourceTree = "<group>"; };
+		68B4CD29A589FAEBABFE33DE /* VoiceMemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoAppApp.swift; sourceTree = "<group>"; };
+		7833C43507BBE19C827AE0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8695E00E2D89F4461F204F75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90A98CD9F91FC6E67872FB89 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A5003134BD6A40CDC2158081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2C6B9C4FD22F9B0CE7671D6 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		EEEA62C95A493908053FB013 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3E245319D984F2A7BC1BF5C5 /* VoiceMemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				A5003134BD6A40CDC2158081 /* Assets.xcassets */,
+				90A98CD9F91FC6E67872FB89 /* AudioManager.swift */,
+				8695E00E2D89F4461F204F75 /* ContentView.swift */,
+				7833C43507BBE19C827AE0A8 /* Info.plist */,
+				E2C6B9C4FD22F9B0CE7671D6 /* RecordingView.swift */,
+				EEEA62C95A493908053FB013 /* StorageManager.swift */,
+				4E6B8D55A1B601DDF20003AE /* VoiceMemo.swift */,
+				68B4CD29A589FAEBABFE33DE /* VoiceMemoAppApp.swift */,
+			);
+			path = VoiceMemoApp;
+			sourceTree = "<group>";
+		};
+		52C3B052142B733C9CA5C96A = {
+			isa = PBXGroup;
+			children = (
+				3E245319D984F2A7BC1BF5C5 /* VoiceMemoApp */,
+				99E5B508002C7E848160431E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99E5B508002C7E848160431E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				222B539FFB5315B3B88EACAA /* VoiceMemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C60DB49BC67F7E464081638D /* VoiceMemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808B69B81F3539F749790F2C /* Build configuration list for PBXNativeTarget "VoiceMemoApp" */;
+			buildPhases = (
+				726293A0969B3EBD31F3CEE7 /* Sources */,
+				1E624039F57429F37975D7D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceMemoApp;
+			productName = VoiceMemoApp;
+			productReference = 222B539FFB5315B3B88EACAA /* VoiceMemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99ECD61BDE131B12E35246A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 006B81A4AF9D03642B04BB8F /* Build configuration list for PBXProject "VoiceMemoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 52C3B052142B733C9CA5C96A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C60DB49BC67F7E464081638D /* VoiceMemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E624039F57429F37975D7D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D492BEF25191E99C8C266EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		726293A0969B3EBD31F3CEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF12B2115F6663D009E802C7 /* AudioManager.swift in Sources */,
+				76FA5256AD6537FAA152D15C /* ContentView.swift in Sources */,
+				771D8CC31AE6D2B38BF90D9B /* RecordingView.swift in Sources */,
+				20FFD8581ECAB88152F1E099 /* StorageManager.swift in Sources */,
+				F881DD02072F79A3B6498823 /* VoiceMemo.swift in Sources */,
+				F166A7A1364F74D0A0C1083A /* VoiceMemoAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2EBE4452BE2E953DEB854374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEVELOPMENT_TEAM = 9KQ6DBM8W6;
+				INFOPLIST_FILE = VoiceMemoApp/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声メモを録音するためにマイクを使用します";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ysugimoto.VoiceMemoApp;
+				PRODUCT_NAME = VoiceMemoApp;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		3ACF30D1FE1AA7410DD277EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3C49203ABB7694507AB6893E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEVELOPMENT_TEAM = 9KQ6DBM8W6;
+				INFOPLIST_FILE = VoiceMemoApp/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声メモを録音するためにマイクを使用します";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ysugimoto.VoiceMemoApp;
+				PRODUCT_NAME = VoiceMemoApp;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		4F81F70A5B58BFCD06B29780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		006B81A4AF9D03642B04BB8F /* Build configuration list for PBXProject "VoiceMemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F81F70A5B58BFCD06B29780 /* Debug */,
+				3ACF30D1FE1AA7410DD277EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		808B69B81F3539F749790F2C /* Build configuration list for PBXNativeTarget "VoiceMemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBE4452BE2E953DEB854374 /* Debug */,
+				3C49203ABB7694507AB6893E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99ECD61BDE131B12E35246A8 /* Project object */;
+}

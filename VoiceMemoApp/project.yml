@@ -1,0 +1,24 @@
+name: VoiceMemoApp
+targets:
+  VoiceMemoApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources: [VoiceMemoApp]
+    info:
+      path: VoiceMemoApp/Info.plist
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.VoiceMemoApp
+      PRODUCT_NAME: VoiceMemoApp
+      INFOPLIST_KEY_NSMicrophoneUsageDescription: 音声メモを録音するためにマイクを使用します
+      SUPPORTED_PLATFORMS: iphonesimulator iphoneos
+      SUPPORTS_MACCATALYST: NO
+      SWIFT_VERSION: "6.0"
+      ALWAYS_SEARCH_USER_PATHS: NO
+schemes:
+  VoiceMemoApp:
+    build:
+      targets:
+        VoiceMemoApp: all
+    run:
+      config: Debug
