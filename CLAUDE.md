@@ -1,9 +1,54 @@
-# Simple Voice Memo iPhone App
+# Phase 1 実装タスク: 基盤構築
 
-## プロジェクト概要
+## 現在のタスク
+**Phase 1: 基盤構築** - SwiftData導入、Keychain、設定画面
 
-iPhone 17向けのシンプルなボイスメモアプリ。
-Claude Codeで完全自動作成する。**xcodegen**を使用してプロジェクト生成。
+詳細プラン: [PHASE1_PLAN.md](PHASE1_PLAN.md)
+
+---
+
+## 重要な制約
+
+1. **既存の録音・保存機能を壊さない** - RecordingViewの保存ボタンは正常動作中
+2. **各ステージ完了後にビルド確認**
+3. **VoiceMemo.swift（既存モデル）は削除しない**
+
+---
+
+## Phase 1 実装タスク
+
+### ステージ A: 独立機能追加
+
+| タスク | ファイル | 操作 |
+|--------|---------|------|
+| A-1 | `VoiceMemoApp/VoiceMemoApp/KeychainService.swift` | **新規作成** |
+| A-2 | `VoiceMemoApp/VoiceMemoApp/SettingsView.swift` | **新規作成** |
+| A-3 | `VoiceMemoApp/VoiceMemoApp/ContentView.swift` | 修正（設定ボタン追加） |
+| A-4 | ビルド確認 | xcodegen + xcodebuild |
+
+### ステージ B: SwiftData 導入
+
+| タスク | ファイル | 操作 |
+|--------|---------|------|
+| B-1 | `VoiceMemoApp/VoiceMemoApp/Recording.swift` | **新規作成** |
+| B-2 | `VoiceMemoApp/VoiceMemoApp/VoiceMemoAppApp.swift` | 修正（ModelContainer追加） |
+| B-3 | ビルド確認 | xcodebuild |
+
+### ステージ C: データ層切り替え
+
+| タスク | ファイル | 操作 |
+|--------|---------|------|
+| C-1 | `VoiceMemoApp/VoiceMemoApp/StorageManager.swift` | 修正（SwiftData対応） |
+| C-2 | `VoiceMemoApp/VoiceMemoApp/ContentView.swift` | 修正（@Query使用） |
+| C-3 | `VoiceMemoApp/VoiceMemoApp/RecordingView.swift` | 修正（SwiftData保存） |
+| C-4 | ビルド確認 | xcodebuild |
+
+### ステージ D: 最終確認
+
+| タスク | 内容 |
+|--------|------|
+| D-1 | 全フローテスト: 録音→保存→一覧→再生 |
+| D-2 | 設定画面テスト: APIキー保存・読み込み |
 
 ---
 
@@ -13,137 +58,138 @@ Claude Codeで完全自動作成する。**xcodegen**を使用してプロジェ
 |------|-----|
 | 言語 | Swift 5.9+ |
 | UI | SwiftUI |
-| 対象OS | iOS 26.0+ |
-| 対象デバイス | iPhone 17 |
+| 対象OS | iOS 17.0+ |
+| データ保存 | **SwiftData** (Phase 1で導入) |
+| セキュリティ | **Keychain** (APIキー保存) |
 | 音声処理 | AVFoundation |
-| データ保存 | ローカル（Documents + UserDefaults） |
 | プロジェクト生成 | xcodegen |
 
 ---
 
-## 機能要件（MVP）
-
-| 機能 | 説明 | 優先度 |
-|------|------|--------|
-| 録音 | マイクで音声を録音し.m4a形式で保存 | 必須 |
-| 一覧表示 | アップロード日別にグループ化して表示 | 必須 |
-| 再生 | 保存した音声を再生/停止 | 必須 |
-
----
-
-## ファイル構成
+## ファイル構成（Phase 1 完了後）
 
 ```
 VoiceMemoApp/
-├── project.yml                    # xcodegen設定（これが重要）
-├── VoiceMemoApp.xcodeproj/        # xcodegen が自動生成
+├── project.yml
+├── VoiceMemoApp.xcodeproj/
 ├── VoiceMemoApp/
-│   ├── VoiceMemoAppApp.swift      # @main エントリーポイント
-│   ├── ContentView.swift          # メイン画面（日付別一覧）
-│   ├── RecordingView.swift        # 録音画面（シート）
-│   ├── VoiceMemo.swift            # データモデル
-│   ├── AudioManager.swift         # 録音・再生ロジック
-│   ├── StorageManager.swift       # データ永続化
-│   ├── Info.plist                 # 権限設定
-│   └── Assets.xcassets/           # アセット
+│   ├── VoiceMemoAppApp.swift      # ModelContainer設定追加
+│   ├── ContentView.swift          # 設定ボタン追加、@Query使用
+│   ├── RecordingView.swift        # SwiftData保存対応
+│   ├── SettingsView.swift         # **新規** APIキー設定画面
+│   ├── VoiceMemo.swift            # 既存（削除しない）
+│   ├── Recording.swift            # **新規** SwiftDataモデル
+│   ├── AudioManager.swift         # 変更なし
+│   ├── StorageManager.swift       # SwiftData対応
+│   ├── KeychainService.swift      # **新規** APIキー管理
+│   ├── Info.plist
+│   └── Assets.xcassets/
 └── README.md
 ```
 
 ---
 
-## 実装ルール
+## ビルドコマンド
 
-### Swift コーディング規約
-
-- SwiftUI の宣言的UIパターンに従う
-- `@StateObject`, `@ObservedObject`, `@Published` で状態管理
-- エラーハンドリングは最小限（print文でログ出力）
-- 過度な抽象化を避け、シンプルな実装を優先
-
-### プロジェクト設定（project.yml）
-
-```yaml
-name: VoiceMemoApp
-targets:
-  VoiceMemoApp:
-    type: application
-    platform: iOS
-    deploymentTarget: "26.0"
-    sources: [VoiceMemoApp]
-    info:
-      path: VoiceMemoApp/Info.plist
-    settings:
-      PRODUCT_BUNDLE_IDENTIFIER: com.example.VoiceMemoApp
-      INFOPLIST_KEY_NSMicrophoneUsageDescription: 音声メモを録音するためにマイクを使用します
-```
-
-### 権限（Info.plist）
-
-必須:
-```xml
-<key>NSMicrophoneUsageDescription</key>
-<string>音声メモを録音するためにマイクを使用します</string>
-```
-
----
-
-## ビルド・実行コマンド
-
-### プロジェクト生成（xcodegen）
 ```bash
-cd /Users/test/Desktop/fukugyo_plan/simple_voicememo_iphoneapp/VoiceMemoApp
+# プロジェクト生成
+cd /Users/test/Desktop/simple_voicememo_iphoneapp/VoiceMemoApp
 xcodegen generate
-```
 
-### ビルド
-```bash
+# ビルド
 xcodebuild -project VoiceMemoApp.xcodeproj \
            -scheme VoiceMemoApp \
-           -destination 'platform=iOS Simulator,name=iPhone 17' \
+           -destination 'platform=iOS Simulator,name=iPhone 16' \
            -derivedDataPath ./build \
            build
-```
 
-### シミュレーター起動
-```bash
-xcrun simctl boot "iPhone 17"
+# シミュレーター実行
+xcrun simctl boot "iPhone 16"
 open -a Simulator
-```
-
-### アプリインストール・起動
-```bash
 xcrun simctl install booted ./build/Build/Products/Debug-iphonesimulator/VoiceMemoApp.app
 xcrun simctl launch booted com.example.VoiceMemoApp
 ```
 
 ---
 
-## 実装ステップ
+## 実装詳細
 
-詳細は [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) を参照。
+### KeychainService.swift
 
-| Step | 内容 | 依存 |
-|------|------|------|
-| 1 | xcodegen導入 + 全ファイル作成 | なし |
-| 2 | プロジェクト生成 + ビルド | Step 1 |
-| 3 | シミュレーター起動・動作確認 | Step 2 |
-| 4 | バグ修正（オプション） | Step 3 |
+```swift
+import Foundation
+import Security
+
+class KeychainService {
+    static let shared = KeychainService()
+    private let service = "com.example.VoiceMemoApp"
+    private let account = "gemini_api_key"
+
+    func saveAPIKey(_ apiKey: String) throws { /* Keychain保存 */ }
+    func getAPIKey() -> String? { /* Keychain読み込み */ }
+    func deleteAPIKey() { /* Keychain削除 */ }
+}
+```
+
+### Recording.swift (SwiftData)
+
+```swift
+import Foundation
+import SwiftData
+
+@Model
+class Recording {
+    @Attribute(.unique) var id: UUID
+    var createdAt: Date
+    var title: String?
+    var audioFileName: String
+    var duration: TimeInterval
+    var fileSize: Int64
+
+    // Phase 3 文字起こし用
+    var transcriptText: String?
+    var transcriptJSON: Data?
+    var status: String = "pending"
+    var errorMessage: String?
+    var processedAt: Date?
+}
+```
+
+### SettingsView.swift
+
+```swift
+import SwiftUI
+
+struct SettingsView: View {
+    @State private var apiKey: String = ""
+    @State private var showSavedMessage = false
+
+    var body: some View {
+        Form {
+            Section("Gemini API設定") {
+                SecureField("APIキー", text: $apiKey)
+                Button("保存") { saveAPIKey() }
+            }
+        }
+        .navigationTitle("設定")
+    }
+}
+```
+
+---
+
+## 完了条件
+
+- [ ] KeychainService が APIキーを保存・取得できる
+- [ ] 設定画面で APIキーを入力・保存できる
+- [ ] SwiftData で Recording が永続化される
+- [ ] 録音→保存→一覧→再生 が動作する
+- [ ] ビルドエラーがない
 
 ---
 
 ## 注意事項
 
-- **xcodegen generate** を実行しないとproject.pbxprojが生成されない
-- ファイル追加/削除時は必ず **xcodegen generate** を再実行
-- シミュレーターでのマイク使用はMacのマイクを使用
-- エラー発生時は該当Stepのみ再実行
-
----
-
-## 追加機能（将来）
-
-MVP完成後に追加可能:
-- 削除機能（スワイプ）
-- タイトル編集
-- 検索機能
-- iCloud同期
+- **xcodegen generate** をファイル追加後に必ず実行
+- iOS 17+ / SwiftData 使用（project.yml の deploymentTarget を 17.0 に変更が必要）
+- 既存の UserDefaults データとの互換性は考慮しない（新規インストール前提）
