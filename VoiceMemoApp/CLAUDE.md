@@ -85,7 +85,7 @@
 | データ保存 | SwiftData |
 | セキュリティ | Keychain |
 | 音声処理 | AVFoundation |
-| 文字起こし | Gemini API (gemini-2.5-flash-lite) |
+| 文字起こし | Gemini API (gemini-2.5-flash) |
 | ファイルアップロード | Google File API |
 | プロジェクト生成 | xcodegen |
 

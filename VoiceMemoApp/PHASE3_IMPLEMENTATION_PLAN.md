@@ -7,20 +7,20 @@
 
 ## 1. 概要
 
-Gemini APIを使用した音声文字起こし機能を実装する。録音完了後、Google File APIにアップロードし、**Gemini 2.5 Flash-Lite** で文字起こしを行い、結果をSwiftDataに保存する。
+Gemini APIを使用した音声文字起こし機能を実装する。録音完了後、Google File APIにアップロードし、**Gemini 2.5 Flash** で文字起こしを行い、結果をSwiftDataに保存する。
 
 ### 1.1 使用モデル
 
 | モデル | 理由 |
 |--------|------|
-| **Gemini 2.5 Flash-Lite** | 無料枠が最も寛大（1,000リクエスト/日） |
+| **Gemini 2.5 Flash** | 高精度な文字起こし・構造化が可能 |
 
 ### 1.2 無料枠の詳細（2026年1月時点）
 
 | モデル | RPM | TPM | RPD（リクエスト/日） |
 |--------|-----|-----|---------------------|
-| **Gemini 2.5 Flash-Lite** | **15** | 250,000 | **1,000** |
-| Gemini 2.5 Flash | 10 | 250,000 | 250 |
+| Gemini 2.5 Flash-Lite | 15 | 250,000 | 1,000 |
+| **Gemini 2.5 Flash** | **10** | 250,000 | **250** |
 | Gemini 2.5 Pro | 5 | 250,000 | 100 |
 
 ### 1.3 2時間音声の処理
@@ -30,15 +30,17 @@ Gemini APIを使用した音声文字起こし機能を実装する。録音完�
 | 最大音声長 | 9.5時間/プロンプト |
 | 2時間の音声 | 230,400トークン（制限内） |
 | 必要リクエスト数 | 3リクエスト/音声（アップロード+文字起こし+構造化） |
-| 1日処理可能数 | **333件/日**（Flash-Lite使用時） |
+| 1日処理可能数 | **83件/日**（Flash使用時） |
 
-### 1.4 営業チーム対応可否
+### 1.4 営業チーム対応可否（個人APIキー前提）
 
-| シナリオ | 必要リクエスト | 対応可否 |
-|---------|--------------|---------|
-| 68名 × 3件/日 | 612 | ✅ |
-| 68名 × 4件/日 | 816 | ✅ |
-| 68名 × 5件/日 | 1,020 | ⚠️ 制限超過 |
+| シナリオ | 必要リクエスト/人 | 対応可否 |
+|---------|-----------------|---------|
+| 1人 × 3件/日 | 9 | ✅ 余裕あり |
+| 1人 × 10件/日 | 30 | ✅ 対応可能 |
+| 1人 × 30件/日 | 90 | ⚠️ 制限に近い |
+
+※ 各営業マンが個別のAPIキーを使用する想定
 
 ---
 
@@ -91,7 +93,7 @@ Gemini APIを使用した音声文字起こし機能を実装する。録音完�
 | `TranscriptionService.swift` | `callGeminiAPI(fileUri:)` 実装、`transcribe(recording:)` 統合 |
 
 **実装内容:**
-- **Gemini 2.5 Flash-Lite** 呼び出し（`gemini-2.5-flash-lite`）
+- **Gemini 2.5 Flash** 呼び出し（`gemini-2.5-flash`）
 - JSON形式で結果取得（summary, keyPoints, actionItems, fullTranscript）
 - Recording更新メソッド
 
@@ -229,7 +231,7 @@ import SwiftData
 
 actor TranscriptionService {
     private let apiKey: String
-    private let model = "gemini-2.5-flash-lite"  // 無料枠が最大
+    private let model = "gemini-2.5-flash"
 
     private let fileAPIBaseURL = "https://generativelanguage.googleapis.com/upload/v1beta/files"
     private let geminiAPIBaseURL = "https://generativelanguage.googleapis.com/v1beta/models"
@@ -312,7 +314,7 @@ Content-Type: audio/mp4
 ### 5.2 Gemini API（文字起こし）
 
 ```http
-POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={API_KEY}
+POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={API_KEY}
 Content-Type: application/json
 
 {
@@ -417,4 +419,4 @@ xcodegen generate && xcodebuild -project VoiceMemoApp.xcodeproj \
 ---
 
 **更新履歴:**
-- 2026-01-09: 初版作成、Gemini 2.5 Flash-Lite採用決定
+- 2026-01-09: 初版作成、Gemini 2.5 Flash採用決定
