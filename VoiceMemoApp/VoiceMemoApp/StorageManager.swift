@@ -1,45 +1,13 @@
+import AVFoundation
 import Foundation
+import SwiftData
 
-class StorageManager: ObservableObject {
-    @Published var memos: [VoiceMemo] = []
+final class StorageManager: ObservableObject, Sendable {
+    static let shared = StorageManager()
 
-    private let userDefaultsKey = "voiceMemos"
+    init() {}
 
-    init() {
-        load()
-    }
-
-    func save() {
-        do {
-            let data = try JSONEncoder().encode(memos)
-            UserDefaults.standard.set(data, forKey: userDefaultsKey)
-        } catch {
-            print("Failed to save memos: \(error)")
-        }
-    }
-
-    func load() {
-        guard let data = UserDefaults.standard.data(forKey: userDefaultsKey) else {
-            return
-        }
-        do {
-            memos = try JSONDecoder().decode([VoiceMemo].self, from: data)
-        } catch {
-            print("Failed to load memos: \(error)")
-        }
-    }
-
-    func add(memo: VoiceMemo) {
-        memos.insert(memo, at: 0)
-        save()
-    }
-
-    func delete(memo: VoiceMemo) {
-        let fileURL = getFileURL(fileName: memo.fileName)
-        try? FileManager.default.removeItem(at: fileURL)
-        memos.removeAll { $0.id == memo.id }
-        save()
-    }
+    // MARK: - File Operations
 
     func getDocumentsDirectory() -> URL {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -47,5 +15,55 @@ class StorageManager: ObservableObject {
 
     func getFileURL(fileName: String) -> URL {
         getDocumentsDirectory().appendingPathComponent(fileName)
+    }
+
+    func deleteAudioFile(fileName: String) {
+        let fileURL = getFileURL(fileName: fileName)
+        try? FileManager.default.removeItem(at: fileURL)
+    }
+
+    func getFileSize(fileName: String) -> Int64 {
+        let fileURL = getFileURL(fileName: fileName)
+        do {
+            let attributes = try FileManager.default.attributesOfItem(atPath: fileURL.path)
+            return attributes[.size] as? Int64 ?? 0
+        } catch {
+            return 0
+        }
+    }
+
+    func getAudioDuration(fileName: String) -> TimeInterval {
+        let fileURL = getFileURL(fileName: fileName)
+        do {
+            let audioPlayer = try AVAudioPlayer(contentsOf: fileURL)
+            return audioPlayer.duration
+        } catch {
+            return 0
+        }
+    }
+}
+
+// MARK: - SwiftData Helpers
+
+extension StorageManager {
+    @MainActor
+    func createRecording(fileName: String, modelContext: ModelContext) -> Recording {
+        let fileSize = getFileSize(fileName: fileName)
+        let duration = getAudioDuration(fileName: fileName)
+
+        let recording = Recording(
+            audioFileName: fileName,
+            duration: duration,
+            fileSize: fileSize
+        )
+
+        modelContext.insert(recording)
+        return recording
+    }
+
+    @MainActor
+    func deleteRecording(_ recording: Recording, modelContext: ModelContext) {
+        deleteAudioFile(fileName: recording.audioFileName)
+        modelContext.delete(recording)
     }
 }

@@ -1,9 +1,12 @@
 import SwiftUI
+import SwiftData
 
 struct RecordingView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var modelContext
     @ObservedObject var audioManager: AudioManager
-    @ObservedObject var storageManager: StorageManager
+
+    private let storageManager = StorageManager.shared
 
     @State private var recordedFileName: String?
     @State private var hasRecorded = false
@@ -76,10 +79,7 @@ struct RecordingView: View {
                 if hasRecorded {
                     HStack(spacing: 40) {
                         Button {
-                            if let fileName = recordedFileName {
-                                let url = storageManager.getFileURL(fileName: fileName)
-                                try? FileManager.default.removeItem(at: url)
-                            }
+                            cancelRecording()
                             dismiss()
                         } label: {
                             Text("キャンセル")
@@ -91,10 +91,7 @@ struct RecordingView: View {
                         }
 
                         Button {
-                            if let fileName = recordedFileName {
-                                let memo = VoiceMemo(fileName: fileName)
-                                storageManager.add(memo: memo)
-                            }
+                            saveRecording()
                             dismiss()
                         } label: {
                             Text("保存")
@@ -126,24 +123,26 @@ struct RecordingView: View {
                         if audioManager.isRecording {
                             audioManager.stopRecording()
                         }
-                        if let fileName = recordedFileName, !hasRecorded {
-                            let url = storageManager.getFileURL(fileName: fileName)
-                            try? FileManager.default.removeItem(at: url)
-                        } else if let fileName = recordedFileName, hasRecorded {
-                            let url = storageManager.getFileURL(fileName: fileName)
-                            try? FileManager.default.removeItem(at: url)
-                        }
+                        cancelRecording()
                         dismiss()
                     }
                 }
             }
         }
     }
+
+    private func saveRecording() {
+        guard let fileName = recordedFileName else { return }
+        _ = storageManager.createRecording(fileName: fileName, modelContext: modelContext)
+    }
+
+    private func cancelRecording() {
+        guard let fileName = recordedFileName else { return }
+        storageManager.deleteAudioFile(fileName: fileName)
+    }
 }
 
 #Preview {
-    RecordingView(
-        audioManager: AudioManager(),
-        storageManager: StorageManager()
-    )
+    RecordingView(audioManager: AudioManager())
+        .modelContainer(for: Recording.self, inMemory: true)
 }

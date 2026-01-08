@@ -1,19 +1,24 @@
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-    @StateObject private var storageManager = StorageManager()
+    @Environment(\.modelContext) private var modelContext
+    @Query(sort: \Recording.createdAt, order: .reverse) private var recordings: [Recording]
     @StateObject private var audioManager = AudioManager()
     @State private var showingRecordSheet = false
+    @State private var showingSettings = false
 
-    var groupedMemos: [(String, [VoiceMemo])] {
-        let grouped = Dictionary(grouping: storageManager.memos) { $0.dateKey }
+    private let storageManager = StorageManager.shared
+
+    var groupedRecordings: [(String, [Recording])] {
+        let grouped = Dictionary(grouping: recordings) { $0.dateKey }
         return grouped.sorted { $0.key > $1.key }
     }
 
     var body: some View {
         NavigationStack {
             List {
-                if storageManager.memos.isEmpty {
+                if recordings.isEmpty {
                     ContentUnavailableView(
                         "メモがありません",
                         systemImage: "mic.slash",
@@ -21,18 +26,19 @@ struct ContentView: View {
                     )
                     .listRowBackground(Color.clear)
                 } else {
-                    ForEach(groupedMemos, id: \.0) { dateKey, memos in
-                        Section(header: Text(memos.first?.formattedDate ?? dateKey)) {
-                            ForEach(memos) { memo in
-                                MemoRow(
-                                    memo: memo,
+                    ForEach(groupedRecordings, id: \.0) { dateKey, dayRecordings in
+                        Section(header: Text(dayRecordings.first?.formattedDate ?? dateKey)) {
+                            ForEach(dayRecordings) { recording in
+                                RecordingRow(
+                                    recording: recording,
                                     audioManager: audioManager,
                                     storageManager: storageManager
                                 )
                             }
                             .onDelete { indexSet in
                                 for index in indexSet {
-                                    storageManager.delete(memo: memos[index])
+                                    let recording = dayRecordings[index]
+                                    storageManager.deleteRecording(recording, modelContext: modelContext)
                                 }
                             }
                         }
@@ -41,6 +47,13 @@ struct ContentView: View {
             }
             .navigationTitle("ボイスメモ")
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        showingSettings = true
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         showingRecordSheet = true
@@ -50,10 +63,10 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showingRecordSheet) {
-                RecordingView(
-                    audioManager: audioManager,
-                    storageManager: storageManager
-                )
+                RecordingView(audioManager: audioManager)
+            }
+            .sheet(isPresented: $showingSettings) {
+                SettingsView()
             }
             .onAppear {
                 audioManager.setupAudioSession()
@@ -62,25 +75,31 @@ struct ContentView: View {
     }
 }
 
-struct MemoRow: View {
-    let memo: VoiceMemo
+struct RecordingRow: View {
+    let recording: Recording
     @ObservedObject var audioManager: AudioManager
-    @ObservedObject var storageManager: StorageManager
+    let storageManager: StorageManager
 
     var isCurrentlyPlaying: Bool {
-        audioManager.currentlyPlayingId == memo.id
+        audioManager.currentlyPlayingId == recording.id
     }
 
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text(memo.title ?? memo.formattedTime)
+                Text(recording.displayTitle)
                     .font(.headline)
-                if memo.title != nil {
-                    Text(memo.formattedTime)
+                if recording.title != nil {
+                    Text(recording.formattedTime)
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
+                HStack(spacing: 8) {
+                    Text(recording.formattedDuration)
+                    Text(recording.formattedFileSize)
+                }
+                .font(.caption2)
+                .foregroundColor(.secondary)
             }
 
             Spacer()
@@ -89,8 +108,8 @@ struct MemoRow: View {
                 if isCurrentlyPlaying {
                     audioManager.stopPlaying()
                 } else {
-                    let url = storageManager.getFileURL(fileName: memo.fileName)
-                    audioManager.play(url: url, id: memo.id)
+                    let url = storageManager.getFileURL(fileName: recording.audioFileName)
+                    audioManager.play(url: url, id: recording.id)
                 }
             } label: {
                 Image(systemName: isCurrentlyPlaying ? "stop.circle.fill" : "play.circle.fill")
@@ -105,4 +124,5 @@ struct MemoRow: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: Recording.self, inMemory: true)
 }
