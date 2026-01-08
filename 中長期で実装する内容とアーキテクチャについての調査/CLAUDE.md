@@ -13,8 +13,8 @@
 | 1 | マルチプラットフォーム対応 | `01_multiplatform.md` | ✅ 完了 |
 | 2 | サーバー移行計画 | `02_server_migration.md` | ✅ 完了 |
 | 3 | SFA/CRM連携 | `03_sfa_crm_integration.md` | ✅ 完了 |
-| 4 | マイクロサービス設計 | `04_microservices.md` | ⬜ 未着手 |
-| 5 | **統合アーキテクチャ** | `05_integrated_architecture.md` | ⬜ 未着手 |
+| 4 | マイクロサービス設計 | `04_microservices.md` | ✅ 完了 |
+| 5 | **統合アーキテクチャ** | `05_integrated_architecture.md` | ✅ 完了 |
 
 ---
 
@@ -87,8 +87,39 @@ YYYY-MM-DD
 
 ## 完了条件
 
-- [ ] 全4テーマの調査完了
-- [ ] 統合アーキテクチャ決定
-- [ ] 技術選定の根拠が明確
-- [ ] 実装ロードマップが定義されている
-- [ ] ARCHITECTURE_DECISION.md に反映済み
+- [x] 全4テーマの調査完了
+- [x] 統合アーキテクチャ決定
+- [x] 技術選定の根拠が明確
+- [x] 実装ロードマップが定義されている
+- [x] ARCHITECTURE_DECISION.md に反映済み
+
+---
+
+## 調査完了報告
+
+**完了日**: 2026-01-09
+
+全5テーマの調査が完了し、統合アーキテクチャが決定しました。
+
+### 主要決定事項
+
+| 項目 | 決定内容 |
+|------|---------|
+| **アーキテクチャ方針** | Cloud Run First + 段階的拡張 |
+| **クラウド** | Google Cloud Platform |
+| **フロントエンド** | Swift (iOS) + React PWA (Web) |
+| **バックエンド** | Python FastAPI |
+| **AI** | Gemini 2.5 Flash |
+| **連携方式** | REST API + Webhook |
+
+### 実装ロードマップ
+
+| フェーズ | 期間 | 内容 |
+|---------|------|------|
+| Phase 1 | 2026 Q1 | iOS基盤構築 |
+| Phase 2 | 2026 Q2 | クラウド移行 |
+| Phase 3 | 2026 Q3 | Web版開発 |
+| Phase 4 | 2026 Q4 | CRM連携 |
+| Phase 5 | 2027 Q1+ | 最適化 |
+
+詳細は [05_integrated_architecture.md](./05_integrated_architecture.md) および [ARCHITECTURE_DECISION.md](./ARCHITECTURE_DECISION.md) を参照。
