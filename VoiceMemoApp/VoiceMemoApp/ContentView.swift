@@ -29,11 +29,20 @@ struct ContentView: View {
                     ForEach(groupedRecordings, id: \.0) { dateKey, dayRecordings in
                         Section(header: Text(dayRecordings.first?.formattedDate ?? dateKey)) {
                             ForEach(dayRecordings) { recording in
-                                RecordingRow(
-                                    recording: recording,
-                                    audioManager: audioManager,
-                                    storageManager: storageManager
-                                )
+                                NavigationLink {
+                                    RecordingDetailView(
+                                        recording: recording,
+                                        audioManager: audioManager,
+                                        storageManager: storageManager
+                                    )
+                                } label: {
+                                    RecordingRow(
+                                        recording: recording,
+                                        audioManager: audioManager,
+                                        storageManager: storageManager,
+                                        modelContext: modelContext
+                                    )
+                                }
                             }
                             .onDelete { indexSet in
                                 for index in indexSet {
@@ -76,9 +85,12 @@ struct ContentView: View {
 }
 
 struct RecordingRow: View {
-    let recording: Recording
+    @Bindable var recording: Recording
     @ObservedObject var audioManager: AudioManager
     let storageManager: StorageManager
+    let modelContext: ModelContext
+
+    @State private var isTranscribing = false
 
     var isCurrentlyPlaying: Bool {
         audioManager.currentlyPlayingId == recording.id
@@ -87,16 +99,25 @@ struct RecordingRow: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text(recording.displayTitle)
-                    .font(.headline)
+                HStack(spacing: 8) {
+                    Text(recording.displayTitle)
+                        .font(.headline)
+
+                    // ステータスアイコン
+                    statusIcon
+                }
+
                 if recording.title != nil {
                     Text(recording.formattedTime)
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
+
                 HStack(spacing: 8) {
                     Text(recording.formattedDuration)
                     Text(recording.formattedFileSize)
+                    // ステータステキスト
+                    statusText
                 }
                 .font(.caption2)
                 .foregroundColor(.secondary)
@@ -104,6 +125,12 @@ struct RecordingRow: View {
 
             Spacer()
 
+            // 文字起こしボタン（pending状態のみ）
+            if recording.recordingStatus == .pending {
+                transcribeButton
+            }
+
+            // 再生ボタン
             Button {
                 if isCurrentlyPlaying {
                     audioManager.stopPlaying()
@@ -119,6 +146,74 @@ struct RecordingRow: View {
             .buttonStyle(BorderlessButtonStyle())
         }
         .padding(.vertical, 4)
+    }
+
+    @ViewBuilder
+    private var statusIcon: some View {
+        switch recording.recordingStatus {
+        case .pending:
+            EmptyView()
+        case .uploading, .processing:
+            ProgressView()
+                .scaleEffect(0.6)
+        case .completed:
+            Image(systemName: "checkmark.circle.fill")
+                .foregroundColor(.green)
+                .font(.caption)
+        case .failed:
+            Image(systemName: "exclamationmark.triangle.fill")
+                .foregroundColor(.red)
+                .font(.caption)
+        }
+    }
+
+    @ViewBuilder
+    private var statusText: some View {
+        switch recording.recordingStatus {
+        case .pending:
+            EmptyView()
+        case .uploading:
+            Text("アップロード中")
+                .foregroundColor(.blue)
+        case .processing:
+            Text("処理中")
+                .foregroundColor(.blue)
+        case .completed:
+            Text("文字起こし完了")
+                .foregroundColor(.green)
+        case .failed:
+            Text("エラー")
+                .foregroundColor(.red)
+        }
+    }
+
+    private var transcribeButton: some View {
+        Button {
+            startTranscription()
+        } label: {
+            Image(systemName: isTranscribing ? "hourglass" : "text.bubble")
+                .font(.title2)
+                .foregroundColor(isTranscribing ? .gray : .orange)
+        }
+        .buttonStyle(BorderlessButtonStyle())
+        .disabled(isTranscribing)
+    }
+
+    private func startTranscription() {
+        guard !isTranscribing else { return }
+        isTranscribing = true
+
+        Task {
+            do {
+                let service = try TranscriptionService()
+                try await service.transcribe(recording: recording, modelContext: modelContext)
+            } catch {
+                recording.recordingStatus = .failed
+                recording.errorMessage = error.localizedDescription
+                try? modelContext.save()
+            }
+            isTranscribing = false
+        }
     }
 }
 
