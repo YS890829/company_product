@@ -9,6 +9,10 @@ struct RecordingDetailView: View {
 
     @State private var isTranscribing = false
     @State private var showFullTranscript = false
+    @State private var showShareSheet = false
+    @State private var shareItems: [Any] = []
+
+    private let exportService = ExportService()
 
     private var transcriptResult: TranscriptResult? {
         guard let data = recording.transcriptJSON else { return nil }
@@ -45,6 +49,27 @@ struct RecordingDetailView: View {
         }
         .navigationTitle(recording.displayTitle)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    shareRecording()
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                }
+                .disabled(recording.recordingStatus != .completed)
+            }
+        }
+        .sheet(isPresented: $showShareSheet) {
+            ShareSheet(items: shareItems)
+        }
+    }
+
+    // MARK: - Share
+
+    private func shareRecording() {
+        let text = exportService.exportRecordingAsText(recording)
+        shareItems = [text]
+        showShareSheet = true
     }
 
     // MARK: - Recording Header

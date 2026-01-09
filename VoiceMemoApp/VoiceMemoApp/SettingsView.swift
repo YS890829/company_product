@@ -1,12 +1,20 @@
 import SwiftUI
+import SwiftData
 
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var modelContext
+    @Query(sort: \Recording.createdAt, order: .reverse) private var recordings: [Recording]
+
     @State private var apiKey: String = ""
     @State private var showSavedMessage = false
     @State private var showErrorMessage = false
     @State private var errorMessage = ""
     @State private var hasExistingKey = false
+    @State private var showExportSheet = false
+    @State private var exportItems: [Any] = []
+
+    private let exportService = ExportService()
 
     var body: some View {
         NavigationStack {
@@ -59,6 +67,38 @@ struct SettingsView: View {
                 }
 
                 Section {
+                    Button {
+                        exportAsJSON()
+                    } label: {
+                        HStack {
+                            Image(systemName: "doc.badge.arrow.up")
+                            Text("JSONでエクスポート")
+                            Spacer()
+                            Text("\(recordings.count)件")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .disabled(recordings.isEmpty)
+
+                    Button {
+                        exportAsText()
+                    } label: {
+                        HStack {
+                            Image(systemName: "doc.text")
+                            Text("テキストでエクスポート")
+                            Spacer()
+                            Text("\(recordings.count)件")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .disabled(recordings.isEmpty)
+                } header: {
+                    Text("データ管理")
+                } footer: {
+                    Text("全ての録音データと文字起こし結果をエクスポートします")
+                }
+
+                Section {
                     Link(destination: URL(string: "https://aistudio.google.com/app/apikey")!) {
                         HStack {
                             Text("Google AI Studioでキーを取得")
@@ -95,6 +135,9 @@ struct SettingsView: View {
             } message: {
                 Text(errorMessage)
             }
+            .sheet(isPresented: $showExportSheet) {
+                ShareSheet(items: exportItems)
+            }
         }
     }
 
@@ -119,6 +162,38 @@ struct SettingsView: View {
         hasExistingKey = false
         apiKey = ""
     }
+
+    private func exportAsJSON() {
+        if let fileURL = exportService.saveJSONToFile(recordings: Array(recordings)) {
+            exportItems = [fileURL]
+            showExportSheet = true
+        } else {
+            errorMessage = "JSONファイルの作成に失敗しました"
+            showErrorMessage = true
+        }
+    }
+
+    private func exportAsText() {
+        if let fileURL = exportService.saveTextToFile(recordings: Array(recordings)) {
+            exportItems = [fileURL]
+            showExportSheet = true
+        } else {
+            errorMessage = "テキストファイルの作成に失敗しました"
+            showErrorMessage = true
+        }
+    }
+}
+
+// MARK: - ShareSheet
+
+struct ShareSheet: UIViewControllerRepresentable {
+    let items: [Any]
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
 #Preview {

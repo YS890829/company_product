@@ -11,6 +11,7 @@
 		28B1ADD6B7D61BF7F4E4C374 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FFB91C1F617B4CDB97EC /* Recording.swift */; };
 		2D492BEF25191E99C8C266EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5003134BD6A40CDC2158081 /* Assets.xcassets */; };
 		347A4B4C6F6092AF894FD003 /* RecordingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2315D112436A03362A85B0D /* RecordingDetailView.swift */; };
+		4F05FB3D779552EF79BDEC0B /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520435DCED42A21C231CE866 /* ExportService.swift */; };
 		76FA5256AD6537FAA152D15C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695E00E2D89F4461F204F75 /* ContentView.swift */; };
 		771D8CC31AE6D2B38BF90D9B /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6B9C4FD22F9B0CE7671D6 /* RecordingView.swift */; };
 		A96AE183E41A71C08FFA6918 /* TranscriptionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50503FF5B6FD98DC7353D8EF /* TranscriptionModels.swift */; };
@@ -28,6 +29,7 @@
 		222B539FFB5315B3B88EACAA /* VoiceMemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6B8D55A1B601DDF20003AE /* VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemo.swift; sourceTree = "<group>"; };
 		50503FF5B6FD98DC7353D8EF /* TranscriptionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionModels.swift; sourceTree = "<group>"; };
+		520435DCED42A21C231CE866 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
 		68B4CD29A589FAEBABFE33DE /* VoiceMemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoAppApp.swift; sourceTree = "<group>"; };
 		76580514EAC53E691F8698C5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7833C43507BBE19C827AE0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 				A5003134BD6A40CDC2158081 /* Assets.xcassets */,
 				90A98CD9F91FC6E67872FB89 /* AudioManager.swift */,
 				8695E00E2D89F4461F204F75 /* ContentView.swift */,
+				520435DCED42A21C231CE866 /* ExportService.swift */,
 				7833C43507BBE19C827AE0A8 /* Info.plist */,
 				F7034430F6EB82D09393C0CC /* KeychainService.swift */,
 				9982FFB91C1F617B4CDB97EC /* Recording.swift */,
@@ -147,6 +150,7 @@
 			files = (
 				AF12B2115F6663D009E802C7 /* AudioManager.swift in Sources */,
 				76FA5256AD6537FAA152D15C /* ContentView.swift in Sources */,
+				4F05FB3D779552EF79BDEC0B /* ExportService.swift in Sources */,
 				DF00C18DBB4052C3E2C1A811 /* KeychainService.swift in Sources */,
 				28B1ADD6B7D61BF7F4E4C374 /* Recording.swift in Sources */,
 				347A4B4C6F6092AF894FD003 /* RecordingDetailView.swift in Sources */,
