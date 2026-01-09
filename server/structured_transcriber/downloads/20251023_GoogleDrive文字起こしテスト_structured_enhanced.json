@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "original_file": "downloads/20251023_GoogleDrive文字起こしテスト_structured.json",
+    "meeting_id": "f34dddc3-001b-409a-8323-f30656cb1341",
+    "meeting_date": "20251023",
+    "processed_at": "2025-10-23T11:19:41.362381"
+  },
+  "meeting": {
+    "title": "無題",
+    "calendar_event_id": null,
+    "start_time": null,
+    "end_time": null
+  },
+  "participants": {
+    "calendar_participants": [],
+    "canonical_names": []
+  },
+  "content": {
+    "topics": [
+      {
+        "id": "topic_1",
+        "name": "文字起こしテスト",
+        "summary": "Google Drive経由での文字起こし機能が正常に動作しているかを確認するためのテストである。今日は10月23日で、4回目のテストとなる。",
+        "keywords": [
+          "Google Drive",
+          "文字起こし",
+          "テスト",
+          "iCloud"
+        ]
+      }
+    ],
+    "entities": {
+      "people": [],
+      "organizations": [
+        "Google Drive"
+      ],
+      "locations": []
+    }
+  },
+  "speaker_inference": {
+    "sugimoto_speaker": "Speaker 1",
+    "confidence": "high",
+    "participants_mapping": {
+      "Speaker 1": "杉本"
+    }
+  },
+  "summary": {
+    "summary": "10月23日の予定に関連する音声で、Google Drive経由での文字起こしテストである。 iCloudへの自動アップロードを避けるため、長めに保存している。",
+    "topics": [
+      "Google Drive文字起こしテスト",
+      "10月23日",
+      "4回目のテスト",
+      "iCloudへの自動アップロード回避",
+      "長めに保存"
+    ],
+    "action_items": [],
+    "keywords": [
+      "Google Drive",
+      "文字起こし",
+      "テスト",
+      "10月23日",
+      "iCloud",
+      "自動アップロード",
+      "保存"
+    ]
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "ああ、テスト、テスト。これはGoogle Drive経由で文字起こしがされているかを確認するテストです。",
+      "timestamp": "00:01"
+    },
+    {
+      "id": 2,
+      "speaker": "Speaker 1",
+      "text": "えっと、合計では今日10月23日において4回目のテストになります。",
+      "timestamp": "00:11"
+    },
+    {
+      "id": 3,
+      "speaker": "Speaker 1",
+      "text": "自動で、 iCloudにアップされないように長めに保存しています。",
+      "timestamp": "00:30"
+    }
+  ]
+}

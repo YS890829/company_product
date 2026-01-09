@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "file": {
+      "file_name": "20251023 094813-1E1A81D1.m4a",
+      "file_size_bytes": 1756867,
+      "format": "m4a",
+      "recorded_at": "2025-10-23T11:18:54.413138",
+      "duration_seconds": 106.473
+    },
+    "transcription": {
+      "transcribed_at": "2025-10-23T11:19:08.521341",
+      "language": "ja",
+      "char_count": 120,
+      "word_count": 5,
+      "sentence_count": 4,
+      "segment_count": 3
+    },
+    "speaker_inference": {
+      "sugimoto_speaker": "Speaker 1",
+      "participants_mapping": {
+        "Speaker 1": "杉本"
+      },
+      "confidence": "high",
+      "reasoning": "会話はSpeaker 1による独白であり、提供された情報に「独白（一人語り）の場合、その話者は100%杉本さんです」と明記されているため、Speaker 1を杉本さんと判断しました。"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "ああ、テスト、テスト。これはGoogle Drive経由で文字起こしがされているかを確認するテストです。",
+      "timestamp": "00:01",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 2,
+      "speaker": "Speaker 1",
+      "text": "えっと、合計では今日10月23日において4回目のテストになります。",
+      "timestamp": "00:11",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 3,
+      "speaker": "Speaker 1",
+      "text": "自動で、 iCloudにアップされないように長めに保存しています。",
+      "timestamp": "00:30",
+      "speaker_name": "杉本"
+    }
+  ],
+  "words": null,
+  "full_text": "ああ、テスト、テスト。これはGoogle Drive経由で文字起こしがされているかを確認するテストです。 えっと、合計では今日10月23日において4回目のテストになります。 自動で、 iCloudにアップされないように長めに保存しています。",
+  "summary": {
+    "summary": "Google Drive経由での文字起こし機能のテストが行われている。これは10月23日における4回目のテストであり、iCloudへの自動アップロードを避けるために長めに保存されている。",
+    "topics": [
+      "Google Drive",
+      "文字起こし",
+      "テスト",
+      "10月23日",
+      "iCloud"
+    ],
+    "action_items": [],
+    "keywords": [
+      "文字起こしテスト",
+      "Google Drive",
+      "iCloud",
+      "自動アップロード",
+      "保存",
+      "10月23日"
+    ]
+  },
+  "matched_calendar_event": {
+    "event": null,
+    "confidence_score": 0.8,
+    "reasoning": "文字起こしの内容は、Google Drive経由での文字起こしテストに関するものです。特に特定の予定に関連するキーワードやトピックは含まれていません。唯一、10月23日という日付が一致していますが、これは日付を確認しているだけで、カレンダーの特定の予定に関連するものではありません。日付が一致することと、テストであるという抽象的な情報しか共通点がないため、該当する予定はないと判断しました。"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "original_file": "downloads/20251023_GoogleDriveテスト_長尺_6回目_structured.json",
+    "meeting_id": "da079bbe-6393-4ed8-ae91-99e92a16c0ad",
+    "meeting_date": "20251023",
+    "processed_at": "2025-10-23T11:18:41.289924"
+  },
+  "meeting": {
+    "title": "無題",
+    "calendar_event_id": null,
+    "start_time": null,
+    "end_time": null
+  },
+  "participants": {
+    "calendar_participants": [],
+    "canonical_names": []
+  },
+  "content": {
+    "topics": [
+      {
+        "id": "topic_1",
+        "name": "Google Driveのテスト",
+        "summary": "Google Driveのテストに関する記録であり、6回目のテストであることが述べられています。",
+        "keywords": [
+          "Google Drive",
+          "テスト"
+        ]
+      },
+      {
+        "id": "topic_2",
+        "name": "長めのファイル作成",
+        "summary": "テストで長めのファイルを作成することを目的とし、時間を置くことが言及されています。",
+        "keywords": [
+          "ファイル作成",
+          "時間",
+          "テスト"
+        ]
+      }
+    ],
+    "entities": {
+      "people": [],
+      "organizations": [
+        "Google Drive"
+      ],
+      "locations": []
+    }
+  },
+  "speaker_inference": {
+    "sugimoto_speaker": "Speaker 1",
+    "confidence": "high",
+    "participants_mapping": {
+      "Speaker 1": "杉本"
+    }
+  },
+  "summary": {
+    "summary": "10月23日の予定に関連する音声記録で、Google Driveのテストを行っている。6回目のテストであり、少し長めのファイルを扱うために時間を置いている。",
+    "topics": [
+      "Google Drive",
+      "テスト",
+      "10月23日",
+      "6回目のテスト",
+      "長めのファイル"
+    ],
+    "action_items": [],
+    "keywords": [
+      "Google Drive",
+      "テスト",
+      "10月23日",
+      "ファイル",
+      "音声記録"
+    ]
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "あー、Google Driveのテストです。",
+      "timestamp": "00:01"
+    },
+    {
+      "id": 2,
+      "speaker": "Speaker 1",
+      "text": "えー、10月23日6回目のテストです。",
+      "timestamp": "00:05"
+    },
+    {
+      "id": 3,
+      "speaker": "Speaker 1",
+      "text": "少し長めのファイルにしたいとね、少し時間を置きます。",
+      "timestamp": "00:11"
+    }
+  ]
+}

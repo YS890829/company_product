@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "file": {
+      "file_name": "20251023 091850-515E509A.m4a",
+      "file_size_bytes": 124568,
+      "format": "m4a",
+      "recorded_at": "2025-10-23T11:14:04.262763",
+      "duration_seconds": 7.486
+    },
+    "transcription": {
+      "transcribed_at": "2025-10-23T11:14:22.198717",
+      "language": "ja",
+      "char_count": 29,
+      "word_count": 1,
+      "sentence_count": 2,
+      "segment_count": 1
+    },
+    "speaker_inference": {
+      "sugimoto_speaker": "Speaker 1",
+      "participants_mapping": {
+        "Speaker 1": "杉本"
+      },
+      "confidence": "high",
+      "reasoning": "会話内容がSpeaker 1による独白（一人語り）であるため、「独白（一人語り）の場合、その話者は100%杉本さんです」という指示に基づき、Speaker 1を杉本さんと判断しました。また、杉本さんのプロフィールにある「録音の目的: 自身の考えや意思決定プロセスを記録」という点とも合致します。"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "テスト、テスト、テスト。10月23日の1回目のテストです。",
+      "timestamp": "00:01",
+      "speaker_name": "杉本"
+    }
+  ],
+  "words": null,
+  "full_text": "テスト、テスト、テスト。10月23日の1回目のテストです。",
+  "summary": {
+    "summary": "これは10月23日に行われる最初のテストのアナウンスメントです。録音された音声は、テストの実施を確認するためのものと考えられます。",
+    "topics": [
+      "テスト",
+      "録音",
+      "アナウンスメント"
+    ],
+    "action_items": [],
+    "keywords": [
+      "テスト",
+      "10月23日",
+      "録音",
+      "確認"
+    ]
+  },
+  "matched_calendar_event": {
+    "event": null,
+    "confidence_score": 0.8,
+    "reasoning": "文字起こし内容が「テスト、テスト、テスト。10月23日の1回目のテストです。」という一般的な内容であるため、特定のアジェンダが設けられたGoogleカレンダーの予定内容と直接的な関連性を見出すことができません。Googleカレンダーの予定は、具体的なタスク、会議、予定など、より詳細な内容が記載されています。したがって、いずれの予定とも明確な一致が見られないため、該当なしと判断しました。ただし、10月23日であることとテストという単語が含まれることから、何らかの確認作業を行っている可能性は高く、ある程度の信頼度を付与しました。"
+  }
+}

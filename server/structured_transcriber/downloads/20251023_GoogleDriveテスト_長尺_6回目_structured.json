@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "file": {
+      "file_name": "20251023 100329-AE80AE45.m4a",
+      "file_size_bytes": 473306,
+      "format": "m4a",
+      "recorded_at": "2025-10-23T11:17:43.782013",
+      "duration_seconds": 28.649
+    },
+    "transcription": {
+      "transcribed_at": "2025-10-23T11:17:57.564480",
+      "language": "ja",
+      "char_count": 69,
+      "word_count": 4,
+      "sentence_count": 3,
+      "segment_count": 3
+    },
+    "speaker_inference": {
+      "sugimoto_speaker": "Speaker 1",
+      "participants_mapping": {
+        "Speaker 1": "杉本"
+      },
+      "confidence": "high",
+      "reasoning": "この録音は杉本さん自身が行ったものであり、会話内容が一人語り（独白）であるため、Speaker 1は杉本さんであると判断しました。（判断基準：録音者である可能性、独白）"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "あー、Google Driveのテストです。",
+      "timestamp": "00:01",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 2,
+      "speaker": "Speaker 1",
+      "text": "えー、10月23日6回目のテストです。",
+      "timestamp": "00:05",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 3,
+      "speaker": "Speaker 1",
+      "text": "少し長めのファイルにしたいとね、少し時間を置きます。",
+      "timestamp": "00:11",
+      "speaker_name": "杉本"
+    }
+  ],
+  "words": null,
+  "full_text": "あー、Google Driveのテストです。 えー、10月23日6回目のテストです。 少し長めのファイルにしたいとね、少し時間を置きます。",
+  "summary": {
+    "summary": "これはGoogle Driveのテスト音声であり、10月23日の6回目のテスト記録です。少し長めのファイルを作成するために、時間を置いて録音されています。",
+    "topics": [
+      "Google Drive",
+      "テスト",
+      "音声記録",
+      "日付 (10月23日)",
+      "6回目"
+    ],
+    "action_items": [],
+    "keywords": [
+      "Google Drive",
+      "テスト",
+      "音声",
+      "記録",
+      "10月23日"
+    ]
+  },
+  "matched_calendar_event": {
+    "event": null,
+    "confidence_score": 0.8,
+    "reasoning": "文字起こしの内容は、Google Driveのテストであること、日付が10月23日であること、そして長めのファイルをテストしていることを示しています。予定一覧を確認したところ、Google Driveに関する予定やファイルテストに関する予定は存在しません。しかし、日付は10月23日と一致しており、Google Driveのテストという行為は、特定のタスクやプロジェクトに関連付けられる可能性があり、記録を残すために行われていると考えられます。よって、直接的に合致する予定はないものの、何らかの作業に関連する記録である可能性を考慮し、「該当なし」と判断しました。信頼度スコアは、日付が一致している点を考慮し、0.8としました。"
+  }
+}

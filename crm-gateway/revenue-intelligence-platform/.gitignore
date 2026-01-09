@@ -1,0 +1,58 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.env
+backend/.env.local
+
+# Node.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.production.local
+frontend/.env.development.local
+
+# Database
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib

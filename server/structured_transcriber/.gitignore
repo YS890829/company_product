@@ -1,0 +1,74 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*.log
+*.pid
+*.backup
+
+# Data directories
+data/raw/*
+data/processed/*
+data/output/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/output/.gitkeep
+
+# Runtime files
+*.db
+*.json.backup
+.processed_files_registry.jsonl
+.deletion_log.jsonl
+.upload_log.jsonl
+.start_page_token.txt
+.channel_info.json
+.icloud_monitor_health.json
+
+# API credentials
+credentials.json
+token.json
+token.json.*
+
+# Personal documents
+*.pdf
+
+# Media files
+*.m4a
+*.mp3
+*.wav
+*.mp4
+*.avi
+
+# Vector DB
+chroma_db/
+
+# Legacy/Archive (keep archive_old_structure but ignore its runtime files)
+archive_old_structure/**/*.log
+archive_old_structure/**/*.pid
+archive_old_structure/**/*.db
+archive_old_structure/downloads/
+archive_old_structure/chroma_db/
+archive_old_structure/logs/

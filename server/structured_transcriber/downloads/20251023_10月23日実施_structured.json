@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "file": {
+      "file_name": "20251023 093941-7A09180E.m4a",
+      "file_size_bytes": 108501,
+      "format": "m4a",
+      "recorded_at": "2025-10-23T11:16:49.194420",
+      "duration_seconds": 6.612
+    },
+    "transcription": {
+      "transcribed_at": "2025-10-23T11:17:03.070855",
+      "language": "ja",
+      "char_count": 19,
+      "word_count": 1,
+      "sentence_count": 1,
+      "segment_count": 1
+    },
+    "speaker_inference": {
+      "sugimoto_speaker": "Speaker 1",
+      "participants_mapping": {
+        "Speaker 1": "杉本"
+      },
+      "confidence": "high",
+      "reasoning": "会話がSpeaker 1の一言のみであり、独白と判断できるため。また、この録音は杉本さん自身が録音したものであり、独白の場合、その話者は100%杉本さんであるという指示に基づきます。"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "あ、10月23日の3回目のテストです。",
+      "timestamp": "00:00",
+      "speaker_name": "杉本"
+    }
+  ],
+  "words": null,
+  "full_text": "あ、10月23日の3回目のテストです。",
+  "summary": {
+    "summary": "10月23日に行われる3回目のテストについての言及です。具体的なテスト内容や詳細は不明です。",
+    "topics": [
+      "テスト"
+    ],
+    "action_items": [],
+    "keywords": [
+      "10月23日",
+      "3回目",
+      "テスト"
+    ]
+  },
+  "matched_calendar_event": {
+    "event": null,
+    "confidence_score": 0.1,
+    "reasoning": "音声文字起こし内容から、具体的な予定との関連性を特定できませんでした。「10月23日の3回目のテスト」という情報だけでは、カレンダー内のどの予定と関連があるか判断するための十分な根拠がないため、最も関連性の高い予定を特定できませんでした。日付は一致するものの、テストに関する記述がないため関連度が低いと判断しました。"
+  }
+}

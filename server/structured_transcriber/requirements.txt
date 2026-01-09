@@ -1,0 +1,15 @@
+openai
+python-dotenv
+google-generativeai
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+fastapi
+uvicorn[standard]
+watchdog>=4.0.0
+psutil>=5.9.0
+streamlit>=1.50.0
+pydantic>=2.0.0
+requests>=2.27.0
+tenacity>=9.0.0
+prometheus-client>=0.21.0

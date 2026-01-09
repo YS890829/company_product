@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "original_file": "downloads/20251023_10月23日_2回目のテスト実施_structured.json",
+    "meeting_id": "31246638-599d-4366-bd94-5c15aa4ae70a",
+    "meeting_date": "20251023",
+    "processed_at": "2025-10-23T11:16:37.761854"
+  },
+  "meeting": {
+    "title": "無題",
+    "calendar_event_id": null,
+    "start_time": null,
+    "end_time": null
+  },
+  "participants": {
+    "calendar_participants": [],
+    "canonical_names": []
+  },
+  "content": {
+    "topics": [
+      {
+        "id": "topic_1",
+        "name": "テスト",
+        "summary": "テストに関する発言。複数回のテスト実施を示唆している。",
+        "keywords": [
+          "テスト",
+          "試験"
+        ]
+      }
+    ],
+    "entities": {
+      "people": [],
+      "organizations": [],
+      "locations": []
+    }
+  },
+  "speaker_inference": {
+    "sugimoto_speaker": "Speaker 1",
+    "confidence": "high",
+    "participants_mapping": {
+      "Speaker 1": "杉本"
+    }
+  },
+  "summary": {
+    "summary": "10月23日に予定されているテストに関する音声記録です。内容は2回目のテストについて述べています。具体的なテスト内容や参加者に関する情報は、現時点では不明です。",
+    "topics": [
+      "テスト",
+      "10月23日",
+      "2回目のテスト"
+    ],
+    "action_items": [],
+    "keywords": [
+      "テスト",
+      "10月23日",
+      "2回目"
+    ]
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "テスト、テスト、テスト。10月23日の2回目のテストです。",
+      "timestamp": "00:00"
+    }
+  ]
+}

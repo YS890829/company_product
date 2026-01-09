@@ -1,0 +1,1425 @@
+{
+  "metadata": {
+    "file": {
+      "file_name": "20251022 152607-75BE2206.m4a",
+      "file_size_bytes": 11101811,
+      "format": "m4a",
+      "recorded_at": "2025-10-23T11:20:02.013309",
+      "duration_seconds": 681.513
+    },
+    "transcription": {
+      "transcribed_at": "2025-10-23T11:22:23.402158",
+      "language": "ja",
+      "char_count": 2774,
+      "word_count": 192,
+      "sentence_count": 159,
+      "segment_count": 192
+    },
+    "speaker_inference": {
+      "sugimoto_speaker": "Speaker 2",
+      "participants_mapping": {
+        "Speaker 1": "獣医",
+        "Speaker 2": "杉本"
+      },
+      "confidence": "high",
+      "reasoning": "会話内容はペットの股関節脱臼の整復後の注意点と安静指示に関するものであり、Speaker 1が専門家として治療内容や今後の指示を説明しています。一方、Speaker 2は飼い主として説明を聞き、質問や懸念を述べています。杉本さんのプロフィール（AIエンジニア）と専門領域は、Speaker 1の専門的な説明内容とは全く合致しません。録音は杉本さん自身が行っており、必ず杉本さんが話者として含まれるという前提から、杉本さんが飼い主側のSpeaker 2であると判断しました。"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "あのところに。",
+      "timestamp": "00:00",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 2,
+      "speaker": "Speaker 1",
+      "text": "は。",
+      "timestamp": "00:01",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 3,
+      "speaker": "Speaker 2",
+      "text": "ああ、はいはいはい。",
+      "timestamp": "00:06",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 4,
+      "speaker": "Speaker 1",
+      "text": "これが、えっと、その前ですね。",
+      "timestamp": "00:07",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 5,
+      "speaker": "Speaker 1",
+      "text": "ここどここに、ま、左右でずれてたのが。",
+      "timestamp": "00:10",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 6,
+      "speaker": "Speaker 1",
+      "text": "このようなところに、あって。",
+      "timestamp": "00:15",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 7,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "00:20",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 8,
+      "speaker": "Speaker 1",
+      "text": "で、これ横から撮った時に。",
+      "timestamp": "00:26",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 9,
+      "speaker": "Speaker 1",
+      "text": "あげたけど。",
+      "timestamp": "00:28",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 10,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "00:30",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 11,
+      "speaker": "Speaker 1",
+      "text": "なんか、通常、えっと、同じ位置にあるはずなのが。",
+      "timestamp": "00:31",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 12,
+      "speaker": "Speaker 1",
+      "text": "あ、こういう風にずれてたのが、まあ、中に入って。",
+      "timestamp": "00:46",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 13,
+      "speaker": "Speaker 1",
+      "text": "これが一番の股関節のところに入る。",
+      "timestamp": "00:52",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 14,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "00:59",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 15,
+      "speaker": "Speaker 1",
+      "text": "はい、入ってますので。",
+      "timestamp": "01:00",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 16,
+      "speaker": "Speaker 2",
+      "text": "なんか、でき。",
+      "timestamp": "01:02",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 17,
+      "speaker": "Speaker 1",
+      "text": "できたと。とりあえずはまりました。",
+      "timestamp": "01:06",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 18,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "01:08",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 19,
+      "speaker": "Speaker 1",
+      "text": "で、はい、またちょっと外れやすくなるので。",
+      "timestamp": "01:09",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 20,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "01:13",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 21,
+      "speaker": "Speaker 1",
+      "text": "まあ、そこに、あの、また多分広げると外れちゃうんで。",
+      "timestamp": "01:13",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 22,
+      "speaker": "Speaker 2",
+      "text": "ま、広げる。",
+      "timestamp": "01:19",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 23,
+      "speaker": "Speaker 1",
+      "text": "そうですね。で、広がらないように。",
+      "timestamp": "01:20",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 24,
+      "speaker": "Speaker 2",
+      "text": "うーん。",
+      "timestamp": "01:22",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 25,
+      "speaker": "Speaker 1",
+      "text": "あの、今こうちょっと固定してるので。",
+      "timestamp": "01:23",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 26,
+      "speaker": "Speaker 2",
+      "text": "ありがとうございます。",
+      "timestamp": "01:27",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 27,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "01:28",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 28,
+      "speaker": "Speaker 1",
+      "text": "で、的にする、外しちゃうと、外れる、噛んだりすると外れちゃうんで。",
+      "timestamp": "01:29",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 29,
+      "speaker": "Speaker 2",
+      "text": "はいはいはい。",
+      "timestamp": "01:38",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 30,
+      "speaker": "Speaker 1",
+      "text": "ええと、ちょっとカラー、カラーとかってしたこと。",
+      "timestamp": "01:42",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 31,
+      "speaker": "Speaker 2",
+      "text": "ない、ない。",
+      "timestamp": "01:45",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 32,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "01:46",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 33,
+      "speaker": "Speaker 1",
+      "text": "で、ちょっとエリザベスカラーも一応この、あの。",
+      "timestamp": "01:47",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 34,
+      "speaker": "Speaker 2",
+      "text": "ああ、こういう感じですね。",
+      "timestamp": "01:52",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 35,
+      "speaker": "Speaker 1",
+      "text": "はい、丸いやつ付けてもらって、その足の外れないように。",
+      "timestamp": "01:55",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 36,
+      "speaker": "Speaker 2",
+      "text": "ああ、触らないように。",
+      "timestamp": "02:00",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 37,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "02:02",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 38,
+      "speaker": "Speaker 1",
+      "text": "はいはいはい。で、1週間ぐらいはなるべく安静にしてもらって。",
+      "timestamp": "02:03",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 39,
+      "speaker": "Speaker 2",
+      "text": "この包帯つけていただいてるのずっとじゃあ1週間つける。",
+      "timestamp": "02:09",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 40,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "02:13",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 41,
+      "speaker": "Speaker 2",
+      "text": "特に付け替えたりとかしなくても。",
+      "timestamp": "02:14",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 42,
+      "speaker": "Speaker 1",
+      "text": "うーん、まあそうですね。うんうん。",
+      "timestamp": "02:18",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 43,
+      "speaker": "Speaker 2",
+      "text": "じゃ、特にこの1週間を気をつけと。",
+      "timestamp": "02:22",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 44,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "02:25",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 45,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "02:26",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 46,
+      "speaker": "Speaker 2",
+      "text": "なんかその、基本家でも放し飼いにしてるんです。",
+      "timestamp": "02:27",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 47,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "02:30",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 48,
+      "speaker": "Speaker 2",
+      "text": "けど、ゲージの中に極力。",
+      "timestamp": "02:30",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 49,
+      "speaker": "Speaker 1",
+      "text": "なるべくそうですね。極力入れてもらって。",
+      "timestamp": "02:32",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 50,
+      "speaker": "Speaker 2",
+      "text": "なんかその、ゲージの中に入れちゃうとリスクだなって思うのは、その、2度びあって出してくれみたいななるって足にめっちゃ負担。",
+      "timestamp": "02:36",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 51,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "02:45",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 52,
+      "speaker": "Speaker 2",
+      "text": "行くんだったらもう放し飼いの方が良かったりするのかな。",
+      "timestamp": "02:46",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 53,
+      "speaker": "Speaker 2",
+      "text": "あ、それするようだったら放した方がいいっていう感じです。",
+      "timestamp": "02:53",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 54,
+      "speaker": "Speaker 1",
+      "text": "ああ、そうですね。",
+      "timestamp": "02:58",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 55,
+      "speaker": "Speaker 1",
+      "text": "こっちもあれですけど。",
+      "timestamp": "03:00",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 56,
+      "speaker": "Speaker 2",
+      "text": "はいはいはい。",
+      "timestamp": "03:03",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 57,
+      "speaker": "Speaker 1",
+      "text": "パッケージを。",
+      "timestamp": "03:08",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 58,
+      "speaker": "Speaker 2",
+      "text": "うーん、オーソドックスな対策と。",
+      "timestamp": "03:12",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 59,
+      "speaker": "Speaker 1",
+      "text": "まあそうですね。",
+      "timestamp": "03:15",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 60,
+      "speaker": "Speaker 1",
+      "text": "うーん。",
+      "timestamp": "03:16",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 61,
+      "speaker": "Speaker 2",
+      "text": "なるほど。",
+      "timestamp": "03:17",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 62,
+      "speaker": "Speaker 1",
+      "text": "で、痛み止めはそのまんま、はい、あの、先生の方で出してくれたやつは続けてもらって。",
+      "timestamp": "03:22",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 63,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "03:28",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 64,
+      "speaker": "Speaker 2",
+      "text": "外の散歩とかは1週間後とかもうやっていいの、それとも1ヶ月2ヶ月ぐらいは。",
+      "timestamp": "03:30",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 65,
+      "speaker": "Speaker 1",
+      "text": "1週間ぐらいは多分。",
+      "timestamp": "03:36",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 66,
+      "speaker": "Speaker 2",
+      "text": "2週間ぐらい。",
+      "timestamp": "03:38",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 67,
+      "speaker": "Speaker 1",
+      "text": "はい。控えてもらった方がいいと。",
+      "timestamp": "03:38",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 68,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "03:40",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 69,
+      "speaker": "Speaker 2",
+      "text": "人体抜けってちょっと私が最初説明でまだ理解できてなかった、切れてるじゃないですか。",
+      "timestamp": "03:45",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 70,
+      "speaker": "Speaker 2",
+      "text": "今今回正しいとこにつけて、この人体って結局どうなるんで、治るんですか。",
+      "timestamp": "03:52",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 71,
+      "speaker": "Speaker 1",
+      "text": "は、えっと、そのまんまになるので。",
+      "timestamp": "03:57",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 72,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "04:02",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 73,
+      "speaker": "Speaker 1",
+      "text": "ま、それも、あの、えっと、まあ、そのまんま固定してれば収まって治ってくることもありますし。",
+      "timestamp": "04:03",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 74,
+      "speaker": "Speaker 2",
+      "text": "ああ、はいはい。",
+      "timestamp": "04:14",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 75,
+      "speaker": "Speaker 2",
+      "text": "なるほど。",
+      "timestamp": "04:17",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 76,
+      "speaker": "Speaker 1",
+      "text": "なので、ま、繰り返すようだったらもうやっぱり手術した方がいいとは。",
+      "timestamp": "04:20",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 77,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "04:26",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 78,
+      "speaker": "Speaker 2",
+      "text": "分かりました。",
+      "timestamp": "04:28",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 79,
+      "speaker": "Speaker 1",
+      "text": "うん。",
+      "timestamp": "04:29",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 80,
+      "speaker": "Speaker 2",
+      "text": "ま、外れたの判断は前、あの、ま、手術前のようの状態になったら、あ、外れたな。",
+      "timestamp": "04:30",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 81,
+      "speaker": "Speaker 1",
+      "text": "ま、そうですね。ちょっと怒ってたりとかしたらそうですね。",
+      "timestamp": "04:36",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 82,
+      "speaker": "Speaker 2",
+      "text": "わかりました。ありがとうございます。",
+      "timestamp": "04:40",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 83,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "04:42",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 84,
+      "speaker": "Speaker 2",
+      "text": "あと、なんか気をつけといた方がいいなとかプラスがあったり。",
+      "timestamp": "04:44",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 85,
+      "speaker": "Speaker 1",
+      "text": "まあそこぐらいっすかね。安静にしてもらうのと、あの、カラーしてて、あの、外さないようにしてもらう。",
+      "timestamp": "04:49",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 86,
+      "speaker": "Speaker 2",
+      "text": "はいはい。",
+      "timestamp": "04:56",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 87,
+      "speaker": "Speaker 1",
+      "text": "足のところですね。",
+      "timestamp": "04:57",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 88,
+      "speaker": "Speaker 2",
+      "text": "カラーってなんかどこでも売ってる感じですかね？ペットショップとか。",
+      "timestamp": "04:59",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 89,
+      "speaker": "Speaker 1",
+      "text": "あ、じゃあ今日病院でこちらからお出しします。",
+      "timestamp": "05:03",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 90,
+      "speaker": "Speaker 2",
+      "text": "あ、いいですか。ぜひお願いします。",
+      "timestamp": "05:06",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 91,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "05:07",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 92,
+      "speaker": "Speaker 1",
+      "text": "ありがとうございます。",
+      "timestamp": "05:09",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 93,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "05:10",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 94,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "05:11",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 95,
+      "speaker": "Speaker 1",
+      "text": "ちょっと多分少し動きづらいとは思いますけど、しばらく。",
+      "timestamp": "05:13",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 96,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "05:17",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 97,
+      "speaker": "Speaker 1",
+      "text": "ちょっとついてて。",
+      "timestamp": "05:18",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 98,
+      "speaker": "Speaker 2",
+      "text": "これ今も痛いのは痛いって感じなんですかね。ニューメ線で。",
+      "timestamp": "05:19",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 99,
+      "speaker": "Speaker 1",
+      "text": "多少痛いとは思います。",
+      "timestamp": "05:24",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 100,
+      "speaker": "Speaker 1",
+      "text": "あの、ま、多分骨は戻ったんですけど、ま、多分その辺の筋肉だったりとか、そういうのは、あの、ま、伸びてたりとかするので。",
+      "timestamp": "05:26",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 101,
+      "speaker": "Speaker 1",
+      "text": "ま、その辺は痛いとは思いますし。",
+      "timestamp": "05:40",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 102,
+      "speaker": "Speaker 2",
+      "text": "ま、ただ、あの、手術前の外れてる時よりかはちょっといいと思います。",
+      "timestamp": "05:42",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 103,
+      "speaker": "Speaker 1",
+      "text": "はい、ありがとうございます。",
+      "timestamp": "05:49",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 104,
+      "speaker": "Speaker 2",
+      "text": "じゃあ、これで。",
+      "timestamp": "05:50",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 105,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "05:53",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 106,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "05:56",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 107,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:00",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 108,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:03",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 109,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:06",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 110,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:09",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 111,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:12",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 112,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:16",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 113,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:20",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 114,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:24",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 115,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:28",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 116,
+      "speaker": "Speaker 2",
+      "text": "これされた的にだけ注射されるんで、嫌な思い出しかないというか。",
+      "timestamp": "06:29",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 117,
+      "speaker": "Speaker 1",
+      "text": "うーん、そうですね。ま、まだ。",
+      "timestamp": "06:34",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 118,
+      "speaker": "Speaker 2",
+      "text": "へー。",
+      "timestamp": "06:39",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 119,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:40",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 120,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:44",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 121,
+      "speaker": "Speaker 2",
+      "text": "カラー嫌いなんですね。",
+      "timestamp": "06:48",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 122,
+      "speaker": "Speaker 2",
+      "text": "あの、普段しないんで、される時イコール注射かで、嫌なこと。",
+      "timestamp": "06:52",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 123,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:58",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 124,
+      "speaker": "Speaker 1",
+      "text": "ちょっと生活がしづらくなると思うんですけど。",
+      "timestamp": "07:05",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 125,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:10",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 126,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:12",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 127,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:16",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 128,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:20",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 129,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:24",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 130,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:28",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 131,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:32",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 132,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:36",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 133,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:39",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 134,
+      "speaker": "Speaker 2",
+      "text": "はい、大丈夫。",
+      "timestamp": "07:43",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 135,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:44",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 136,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "07:49",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 137,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:51",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 138,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:55",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 139,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:00",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 140,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:06",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 141,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:06",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 142,
+      "speaker": "Speaker 1",
+      "text": "こっちでもいいかもしれないけど、ちょっと。",
+      "timestamp": "08:09",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 143,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:12",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 144,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:16",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 145,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:20",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 146,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:25",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 147,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:25",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 148,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "08:29",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 149,
+      "speaker": "Speaker 2",
+      "text": "はい、ありがとうございます。",
+      "timestamp": "08:31",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 150,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "08:32",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 151,
+      "speaker": "Speaker 1",
+      "text": "よいしょ。じゃあこれで。",
+      "timestamp": "08:34",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 152,
+      "speaker": "Speaker 2",
+      "text": "お願いします。",
+      "timestamp": "08:38",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 153,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:39",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 154,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:49",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 155,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:49",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 156,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:52",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 157,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:56",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 158,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:00",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 159,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:04",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 160,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:07",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 161,
+      "speaker": "Speaker 1",
+      "text": "はいはい。逆に。",
+      "timestamp": "09:07",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 162,
+      "speaker": "Speaker 2",
+      "text": "逆につけない方がいい気がするんです。",
+      "timestamp": "09:12",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 163,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:15",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 164,
+      "speaker": "Speaker 1",
+      "text": "うーん。つけない方がいいですかね。",
+      "timestamp": "09:17",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 165,
+      "speaker": "Speaker 1",
+      "text": "ま、家帰ってからつけます。",
+      "timestamp": "09:21",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 166,
+      "speaker": "Speaker 1",
+      "text": "ま、でも。",
+      "timestamp": "09:24",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 167,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:28",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 168,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:30",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 169,
+      "speaker": "Speaker 1",
+      "text": "あ、つけずにしてみてまた。",
+      "timestamp": "09:33",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 170,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:36",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 171,
+      "speaker": "Speaker 2",
+      "text": "あれですもんね。このつけとくと足触らないか、靴、足触ったりしないように。",
+      "timestamp": "09:40",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 172,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "09:48",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 173,
+      "speaker": "Speaker 1",
+      "text": "はいはい。",
+      "timestamp": "09:49",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 174,
+      "speaker": "Speaker 2",
+      "text": "うーん。一旦、あの、これ購入させてもらえ、しつつ、ま、ちょっと様子見て必要そうだったらつけるっていう形にしようと思います。",
+      "timestamp": "09:50",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 175,
+      "speaker": "Speaker 2",
+      "text": "変に暴れて、逆に足が負担かかるかもしれないので。",
+      "timestamp": "10:00",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 176,
+      "speaker": "Speaker 1",
+      "text": "ちょっと様子を見ていこうと思います。",
+      "timestamp": "10:07",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 177,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "10:10",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 178,
+      "speaker": "Speaker 2",
+      "text": "ありがとうございます。",
+      "timestamp": "10:11",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 179,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:12",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 180,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:19",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 181,
+      "speaker": "Speaker 2",
+      "text": "はい、ありがとうございます。",
+      "timestamp": "10:22",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 182,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:23",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 183,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:28",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 184,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "10:33",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 185,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "10:34",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 186,
+      "speaker": "Speaker 1",
+      "text": "はい、分かっといて。",
+      "timestamp": "10:35",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 187,
+      "speaker": "Speaker 2",
+      "text": "あ、いいですよ。はい。",
+      "timestamp": "10:38",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 188,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "10:39",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 189,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "10:40",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 190,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "10:42",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 191,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:43",
+      "speaker_name": "獣医"
+    },
+    {
+      "id": 192,
+      "speaker": "Speaker 2",
+      "text": "(電子音)",
+      "timestamp": "11:21",
+      "speaker_name": "杉本"
+    }
+  ],
+  "words": null,
+  "full_text": "あのところに。 は。 ああ、はいはいはい。 これが、えっと、その前ですね。 ここどここに、ま、左右でずれてたのが。 このようなところに、あって。 はい。 で、これ横から撮った時に。 あげたけど。 はい。 なんか、通常、えっと、同じ位置にあるはずなのが。 あ、こういう風にずれてたのが、まあ、中に入って。 これが一番の股関節のところに入る。 はい。 はい、入ってますので。 なんか、でき。 できたと。とりあえずはまりました。 はい。 で、はい、またちょっと外れやすくなるので。 はい。 まあ、そこに、あの、また多分広げると外れちゃうんで。 ま、広げる。 そうですね。で、広がらないように。 うーん。 あの、今こうちょっと固定してるので。 ありがとうございます。 はい。 で、的にする、外しちゃうと、外れる、噛んだりすると外れちゃうんで。 はいはいはい。 ええと、ちょっとカラー、カラーとかってしたこと。 ない、ない。 はい。 で、ちょっとエリザベスカラーも一応この、あの。 ああ、こういう感じですね。 はい、丸いやつ付けてもらって、その足の外れないように。 ああ、触らないように。 そうですね。 はいはいはい。で、1週間ぐらいはなるべく安静にしてもらって。 この包帯つけていただいてるのずっとじゃあ1週間つける。 そうですね。 特に付け替えたりとかしなくても。 うーん、まあそうですね。うんうん。 じゃ、特にこの1週間を気をつけと。 はい。 はい。 なんかその、基本家でも放し飼いにしてるんです。 はい。 けど、ゲージの中に極力。 なるべくそうですね。極力入れてもらって。 なんかその、ゲージの中に入れちゃうとリスクだなって思うのは、その、2度びあって出してくれみたいななるって足にめっちゃ負担。 そうですね。 行くんだったらもう放し飼いの方が良かったりするのかな。 あ、それするようだったら放した方がいいっていう感じです。 ああ、そうですね。 こっちもあれですけど。 はいはいはい。 パッケージを。 うーん、オーソドックスな対策と。 まあそうですね。 うーん。 なるほど。 で、痛み止めはそのまんま、はい、あの、先生の方で出してくれたやつは続けてもらって。 はい。 外の散歩とかは1週間後とかもうやっていいの、それとも1ヶ月2ヶ月ぐらいは。 1週間ぐらいは多分。 2週間ぐらい。 はい。控えてもらった方がいいと。 はい。 人体抜けってちょっと私が最初説明でまだ理解できてなかった、切れてるじゃないですか。 今今回正しいとこにつけて、この人体って結局どうなるんで、治るんですか。 は、えっと、そのまんまになるので。 はい。 ま、それも、あの、えっと、まあ、そのまんま固定してれば収まって治ってくることもありますし。 ああ、はいはい。 なるほど。 なので、ま、繰り返すようだったらもうやっぱり手術した方がいいとは。 はい。 分かりました。 うん。 ま、外れたの判断は前、あの、ま、手術前のようの状態になったら、あ、外れたな。 ま、そうですね。ちょっと怒ってたりとかしたらそうですね。 わかりました。ありがとうございます。 はい。 あと、なんか気をつけといた方がいいなとかプラスがあったり。 まあそこぐらいっすかね。安静にしてもらうのと、あの、カラーしてて、あの、外さないようにしてもらう。 はいはい。 足のところですね。 カラーってなんかどこでも売ってる感じですかね？ペットショップとか。 あ、じゃあ今日病院でこちらからお出しします。 あ、いいですか。ぜひお願いします。 はい。 ありがとうございます。 はい。 はい。 ちょっと多分少し動きづらいとは思いますけど、しばらく。 はい。 ちょっとついてて。 これ今も痛いのは痛いって感じなんですかね。ニューメ線で。 多少痛いとは思います。 あの、ま、多分骨は戻ったんですけど、ま、多分その辺の筋肉だったりとか、そういうのは、あの、ま、伸びてたりとかするので。 ま、その辺は痛いとは思いますし。 ま、ただ、あの、手術前の外れてる時よりかはちょっといいと思います。 はい、ありがとうございます。 じゃあ、これで。 (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) これされた的にだけ注射されるんで、嫌な思い出しかないというか。 うーん、そうですね。ま、まだ。 へー。 (ペットの鳴き声) (ペットの鳴き声) カラー嫌いなんですね。 あの、普段しないんで、される時イコール注射かで、嫌なこと。 (ペットの鳴き声) ちょっと生活がしづらくなると思うんですけど。 (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) はい、大丈夫。 (ペットの鳴き声) はい、分かりました。 (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) こっちでもいいかもしれないけど、ちょっと。 (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) はい、分かりました。 はい、ありがとうございます。 はい。 よいしょ。じゃあこれで。 お願いします。 (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) (ペットの鳴き声) はいはい。逆に。 逆につけない方がいい気がするんです。 (ペットの鳴き声) うーん。つけない方がいいですかね。 ま、家帰ってからつけます。 ま、でも。 (ペットの鳴き声) (ペットの鳴き声) あ、つけずにしてみてまた。 (ペットの鳴き声) あれですもんね。このつけとくと足触らないか、靴、足触ったりしないように。 そうですね。 はいはい。 うーん。一旦、あの、これ購入させてもらえ、しつつ、ま、ちょっと様子見て必要そうだったらつけるっていう形にしようと思います。 変に暴れて、逆に足が負担かかるかもしれないので。 ちょっと様子を見ていこうと思います。 はい。 ありがとうございます。 (ペットの鳴き声) (ペットの鳴き声) はい、ありがとうございます。 (ペットの鳴き声) (ペットの鳴き声) はい。 はい。 はい、分かっといて。 あ、いいですよ。はい。 はい、分かりました。 はい、分かりました。 はい。 (ペットの鳴き声) (電子音)",
+  "summary": {
+    "summary": "川嶋ペットクリニックでの電話相談。ペットの股関節が外れていたが、応急処置として関節をはめ込むことができた。今後は安静に保ち、エリザベスカラーの使用や生活環境に注意しながら経過観察し、再発防止に努める。",
+    "topics": [
+      "股関節脱臼の整復",
+      "今後の外れるリスクと対策（エリザベスカラー、安静）",
+      "包帯の処置と期間",
+      "安静時の過ごし方（ケージか放し飼いか）",
+      "痛み止めの継続",
+      "散歩の制限期間",
+      "断裂した靭帯について",
+      "再脱臼の判断基準と手術の可能性",
+      "エリザベスカラーの購入と装着判断",
+      "ペットの病院嫌いとエリザベスカラーへの抵抗"
+    ],
+    "action_items": [
+      "1週間は包帯を付け替えずに安静にする",
+      "痛み止めを継続する",
+      "2週間程度は散歩を控える",
+      "エリザベスカラーを病院で購入し、ペットの様子を見ながら装着を検討する"
+    ],
+    "keywords": [
+      "股関節脱臼",
+      "整復",
+      "エリザベスカラー",
+      "安静",
+      "包帯",
+      "痛み止め",
+      "靭帯",
+      "再脱臼",
+      "ケージ",
+      "放し飼い"
+    ]
+  },
+  "matched_calendar_event": {
+    "event": {
+      "id": "_6os3cd9i8ooj6ba2612kcb9k6csj6ba28d33eb9h8opkahhm74o30e9j60",
+      "summary": "川嶋ペットクリニック電話",
+      "start": {
+        "dateTime": "2025-10-23T09:30:00+09:00",
+        "timeZone": "Asia/Tokyo"
+      },
+      "end": {
+        "dateTime": "2025-10-23T10:00:00+09:00",
+        "timeZone": "Asia/Tokyo"
+      }
+    },
+    "confidence_score": 0.95,
+    "reasoning": "文字起こし内容が犬（または猫）の股関節の治療に関する獣医との会話であり、エリザベスカラーや安静期間、今後の治療方針について話していることから、予定4「川嶋ペットクリニック電話」と合致すると判断しました。ペットの鳴き声も含まれていることから、信頼度が高いです。"
+  }
+}

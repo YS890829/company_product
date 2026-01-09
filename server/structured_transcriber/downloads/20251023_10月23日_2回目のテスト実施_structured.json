@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "file": {
+      "file_name": "20251023 092925-9C05FB37.m4a",
+      "file_size_bytes": 127488,
+      "format": "m4a",
+      "recorded_at": "2025-10-23T11:16:01.164733",
+      "duration_seconds": 7.572
+    },
+    "transcription": {
+      "transcribed_at": "2025-10-23T11:16:13.383827",
+      "language": "ja",
+      "char_count": 29,
+      "word_count": 1,
+      "sentence_count": 2,
+      "segment_count": 1
+    },
+    "speaker_inference": {
+      "sugimoto_speaker": "Speaker 1",
+      "participants_mapping": {
+        "Speaker 1": "杉本"
+      },
+      "confidence": "high",
+      "reasoning": "会話はSpeaker 1のみによる独白であり、「独白（一人語り）の場合、その話者は100%杉本さんです」という指示に基づき、Speaker 1を杉本と判断しました。また、杉本さんのプロフィールの「録音の目的: 自身の考えや意思決定プロセスを記録」という点も、この独白が杉本さんによるものであることを裏付けています。"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "テスト、テスト、テスト。10月23日の2回目のテストです。",
+      "timestamp": "00:00",
+      "speaker_name": "杉本"
+    }
+  ],
+  "words": null,
+  "full_text": "テスト、テスト、テスト。10月23日の2回目のテストです。",
+  "summary": {
+    "summary": "10月23日に実施された2回目のテストに関する音声記録です。短い音声ファイルであり、内容の詳細は不明です。",
+    "topics": [
+      "テスト",
+      "10月23日",
+      "2回目のテスト"
+    ],
+    "action_items": [],
+    "keywords": [
+      "テスト",
+      "10月",
+      "23日"
+    ]
+  },
+  "matched_calendar_event": {
+    "event": null,
+    "confidence_score": 0.8,
+    "reasoning": "文字起こし内容が「テスト」であるため、具体的な内容が特定できません。しかし、この内容自体は、何らかのテスト（音声テスト、システムテストなど）の実施時に記録された音声である可能性が高いです。Googleカレンダーの予定で直接テストに関連するものは見当たらないため、特定の予定に関連付けることは困難ですが、どの予定を実行するにあたっても、何らかのテストを行う可能性は否定できないため、どれかの予定に関連づけるよりも「該当なし」とする方が適切です。テストという単語が予定のタイトルやメモに含まれている予定はありませんでした。"
+  }
+}

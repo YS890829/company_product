@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "file": {
+      "file_name": "20251023 095542-82DE24B0.m4a",
+      "file_size_bytes": 2610544,
+      "format": "m4a",
+      "recorded_at": "2025-10-23T11:15:04.289987",
+      "duration_seconds": 157.097
+    },
+    "transcription": {
+      "transcribed_at": "2025-10-23T11:15:23.503389",
+      "language": "ja",
+      "char_count": 75,
+      "word_count": 4,
+      "sentence_count": 4,
+      "segment_count": 3
+    },
+    "speaker_inference": {
+      "sugimoto_speaker": "Speaker 1",
+      "participants_mapping": {
+        "Speaker 1": "杉本"
+      },
+      "confidence": "high",
+      "reasoning": "会話はSpeaker 1による独白（一人語り）です。「この録音は杉本さん自身が録音したものであり、独白の場合、その話者は100%杉本さんである」という指示に基づき、Speaker 1を杉本と判断しました。また、録音の目的がテストである点も、杉本さんの「録音の目的: 自身の考えや意思決定プロセスを記録」というプロフィールの行動と合致します。"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "あ、テスト。10月23日5回目のテストです。",
+      "timestamp": "00:01",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 2,
+      "speaker": "Speaker 1",
+      "text": "Google Drive経由で行うため、少し長めの音声にするためしばらく置きます。",
+      "timestamp": "00:07",
+      "speaker_name": "杉本"
+    },
+    {
+      "id": 3,
+      "speaker": "Speaker 1",
+      "text": "テストを終了します。",
+      "timestamp": "02:34",
+      "speaker_name": "杉本"
+    }
+  ],
+  "words": null,
+  "full_text": "あ、テスト。10月23日5回目のテストです。 Google Drive経由で行うため、少し長めの音声にするためしばらく置きます。 テストを終了します。",
+  "summary": {
+    "summary": "10月23日に行われた5回目のテストに関する音声記録です。Google Drive経由で行われるため、長めの音声となっています。音声はテスト終了を宣言して終わっています。",
+    "topics": [
+      "テスト",
+      "10月23日",
+      "5回目",
+      "Google Drive",
+      "音声記録",
+      "テスト終了"
+    ],
+    "action_items": [],
+    "keywords": [
+      "テスト",
+      "10月23日",
+      "Google Drive",
+      "音声",
+      "記録"
+    ]
+  },
+  "matched_calendar_event": {
+    "event": null,
+    "confidence_score": 0.8,
+    "reasoning": "文字起こし内容が「テスト」という内容であり、具体的な予定のタイトルやメモに合致するものはありません。カレンダーにある予定は具体的なタスクやイベントであり、テストに関する記述がないため、最も可能性が高いのは「該当なし」と判断しました。 ただし、カレンダーに記録されていない、何らかのシステムテストである可能性は否定できないため、信頼度を0.8としました。"
+  }
+}

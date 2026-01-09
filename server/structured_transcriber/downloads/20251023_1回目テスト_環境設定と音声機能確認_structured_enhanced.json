@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "original_file": "downloads/20251023_1回目テスト_環境設定と音声機能確認_structured.json",
+    "meeting_id": "8c8262b2-243f-4a26-93f7-74bc6f3d16cf",
+    "meeting_date": "20251023",
+    "processed_at": "2025-10-23T11:14:50.148426"
+  },
+  "meeting": {
+    "title": "無題",
+    "calendar_event_id": null,
+    "start_time": null,
+    "end_time": null
+  },
+  "participants": {
+    "calendar_participants": [],
+    "canonical_names": []
+  },
+  "content": {
+    "topics": [
+      {
+        "id": "topic_1",
+        "name": "テスト",
+        "summary": "10月23日に行われたテストに関する内容です。",
+        "keywords": [
+          "テスト",
+          "10月23日"
+        ]
+      }
+    ],
+    "entities": {
+      "people": [],
+      "organizations": [],
+      "locations": []
+    }
+  },
+  "speaker_inference": {
+    "sugimoto_speaker": "Speaker 1",
+    "confidence": "high",
+    "participants_mapping": {
+      "Speaker 1": "杉本"
+    }
+  },
+  "summary": {
+    "summary": "10月23日のカレンダー予定に関連する音声の記録です。これはテスト音声であり、詳細な議題や参加者の情報は記録されていません。",
+    "topics": [
+      "テスト音声",
+      "10月23日",
+      "1回目のテスト"
+    ],
+    "action_items": [],
+    "keywords": [
+      "テスト",
+      "音声",
+      "10月23日"
+    ]
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "テスト、テスト、テスト。10月23日の1回目のテストです。",
+      "timestamp": "00:01"
+    }
+  ]
+}

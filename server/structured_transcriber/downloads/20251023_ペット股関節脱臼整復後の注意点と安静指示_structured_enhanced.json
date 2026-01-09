@@ -1,0 +1,1264 @@
+{
+  "metadata": {
+    "original_file": "downloads/20251023_ペット股関節脱臼整復後の注意点と安静指示_structured.json",
+    "meeting_id": "ed173067-48e8-4293-bc76-d6493878bfad",
+    "meeting_date": "20251023",
+    "processed_at": "2025-10-23T11:23:05.395569"
+  },
+  "meeting": {
+    "title": "無題",
+    "calendar_event_id": null,
+    "start_time": null,
+    "end_time": null
+  },
+  "participants": {
+    "calendar_participants": [],
+    "canonical_names": []
+  },
+  "content": {
+    "topics": [
+      {
+        "id": "topic_1",
+        "name": "股関節脱臼の整復と治療",
+        "summary": "ペットの股関節脱臼を整復し、今後の治療方針について話し合っている。安静、カラー装着、痛み止め投与、再発防止のための手術の可能性などが議論されている。",
+        "keywords": [
+          "股関節脱臼",
+          "整復",
+          "エリザベスカラー",
+          "安静",
+          "痛み止め",
+          "手術",
+          "再発防止"
+        ]
+      },
+      {
+        "id": "topic_2",
+        "name": "エリザベスカラーの装着と安静",
+        "summary": "エリザベスカラーの必要性と装着方法、および安静期間について説明している。ペットの性格や状態に合わせて、装着するかどうかを検討し、安静を保つ重要性を強調している。",
+        "keywords": [
+          "エリザベスカラー",
+          "安静",
+          "行動制限",
+          "ペットの性格",
+          "獣医",
+          "装着"
+        ]
+      },
+      {
+        "id": "topic_3",
+        "name": "退院後のケアと注意点",
+        "summary": "退院後のペットのケアについて説明している。ゲージの使用、散歩の制限、痛み止めの継続、再脱臼の兆候など、注意すべき点を具体的に示している。",
+        "keywords": [
+          "退院",
+          "ケア",
+          "ゲージ",
+          "散歩",
+          "痛み止め",
+          "再脱臼",
+          "兆候",
+          "安静"
+        ]
+      }
+    ],
+    "entities": {
+      "people": [],
+      "organizations": [
+        "病院",
+        "ペットショップ"
+      ],
+      "locations": []
+    }
+  },
+  "speaker_inference": {
+    "sugimoto_speaker": "Speaker 2",
+    "confidence": "high",
+    "participants_mapping": {
+      "Speaker 1": "獣医",
+      "Speaker 2": "杉本"
+    }
+  },
+  "summary": {
+    "summary": "股関節が外れたペットに対する治療後の経過観察と今後のケアに関する獣医との会話です。股関節は応急的に戻ったものの、再発防止のための注意点やエリザベスカラーの使用について話し合われています。最終的に、エリザベスカラーは一旦購入し、自宅での様子を見てから使用するか判断することになりました。",
+    "topics": [
+      "股関節のずれが応急的に戻ったこと",
+      "再発防止のための安静とエリザベスカラーの必要性",
+      "エリザベスカラー装着によるストレスと足への負担",
+      "包帯の交換頻度と安静期間（約1週間）",
+      "痛み止めの継続",
+      "1週間後の散歩の可否（2週間程度控えるのが望ましい）",
+      "断裂した靭帯の現状と今後の治療方針（手術の可能性）"
+    ],
+    "action_items": [
+      "エリザベスカラーを購入し、自宅でペットの様子を見て使用するか判断する",
+      "1週間程度、ペットを安静に保ち、ゲージに入れるか放し飼いにするかはペットの様子を見て判断する",
+      "獣医から処方された痛み止めを継続する",
+      "1週間〜2週間程度、散歩を控える"
+    ],
+    "keywords": [
+      "股関節",
+      "脱臼",
+      "エリザベスカラー",
+      "安静",
+      "包帯",
+      "痛み止め",
+      "靭帯",
+      "手術",
+      "ペット",
+      "獣医"
+    ]
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "Speaker 1",
+      "text": "あのところに。",
+      "timestamp": "00:00"
+    },
+    {
+      "id": 2,
+      "speaker": "Speaker 1",
+      "text": "は。",
+      "timestamp": "00:01"
+    },
+    {
+      "id": 3,
+      "speaker": "Speaker 2",
+      "text": "ああ、はいはいはい。",
+      "timestamp": "00:06"
+    },
+    {
+      "id": 4,
+      "speaker": "Speaker 1",
+      "text": "これが、えっと、その前ですね。",
+      "timestamp": "00:07"
+    },
+    {
+      "id": 5,
+      "speaker": "Speaker 1",
+      "text": "ここどここに、ま、左右でずれてたのが。",
+      "timestamp": "00:10"
+    },
+    {
+      "id": 6,
+      "speaker": "Speaker 1",
+      "text": "このようなところに、あって。",
+      "timestamp": "00:15"
+    },
+    {
+      "id": 7,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "00:20"
+    },
+    {
+      "id": 8,
+      "speaker": "Speaker 1",
+      "text": "で、これ横から撮った時に。",
+      "timestamp": "00:26"
+    },
+    {
+      "id": 9,
+      "speaker": "Speaker 1",
+      "text": "あげたけど。",
+      "timestamp": "00:28"
+    },
+    {
+      "id": 10,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "00:30"
+    },
+    {
+      "id": 11,
+      "speaker": "Speaker 1",
+      "text": "なんか、通常、えっと、同じ位置にあるはずなのが。",
+      "timestamp": "00:31"
+    },
+    {
+      "id": 12,
+      "speaker": "Speaker 1",
+      "text": "あ、こういう風にずれてたのが、まあ、中に入って。",
+      "timestamp": "00:46"
+    },
+    {
+      "id": 13,
+      "speaker": "Speaker 1",
+      "text": "これが一番の股関節のところに入る。",
+      "timestamp": "00:52"
+    },
+    {
+      "id": 14,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "00:59"
+    },
+    {
+      "id": 15,
+      "speaker": "Speaker 1",
+      "text": "はい、入ってますので。",
+      "timestamp": "01:00"
+    },
+    {
+      "id": 16,
+      "speaker": "Speaker 2",
+      "text": "なんか、でき。",
+      "timestamp": "01:02"
+    },
+    {
+      "id": 17,
+      "speaker": "Speaker 1",
+      "text": "できたと。とりあえずはまりました。",
+      "timestamp": "01:06"
+    },
+    {
+      "id": 18,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "01:08"
+    },
+    {
+      "id": 19,
+      "speaker": "Speaker 1",
+      "text": "で、はい、またちょっと外れやすくなるので。",
+      "timestamp": "01:09"
+    },
+    {
+      "id": 20,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "01:13"
+    },
+    {
+      "id": 21,
+      "speaker": "Speaker 1",
+      "text": "まあ、そこに、あの、また多分広げると外れちゃうんで。",
+      "timestamp": "01:13"
+    },
+    {
+      "id": 22,
+      "speaker": "Speaker 2",
+      "text": "ま、広げる。",
+      "timestamp": "01:19"
+    },
+    {
+      "id": 23,
+      "speaker": "Speaker 1",
+      "text": "そうですね。で、広がらないように。",
+      "timestamp": "01:20"
+    },
+    {
+      "id": 24,
+      "speaker": "Speaker 2",
+      "text": "うーん。",
+      "timestamp": "01:22"
+    },
+    {
+      "id": 25,
+      "speaker": "Speaker 1",
+      "text": "あの、今こうちょっと固定してるので。",
+      "timestamp": "01:23"
+    },
+    {
+      "id": 26,
+      "speaker": "Speaker 2",
+      "text": "ありがとうございます。",
+      "timestamp": "01:27"
+    },
+    {
+      "id": 27,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "01:28"
+    },
+    {
+      "id": 28,
+      "speaker": "Speaker 1",
+      "text": "で、的にする、外しちゃうと、外れる、噛んだりすると外れちゃうんで。",
+      "timestamp": "01:29"
+    },
+    {
+      "id": 29,
+      "speaker": "Speaker 2",
+      "text": "はいはいはい。",
+      "timestamp": "01:38"
+    },
+    {
+      "id": 30,
+      "speaker": "Speaker 1",
+      "text": "ええと、ちょっとカラー、カラーとかってしたこと。",
+      "timestamp": "01:42"
+    },
+    {
+      "id": 31,
+      "speaker": "Speaker 2",
+      "text": "ない、ない。",
+      "timestamp": "01:45"
+    },
+    {
+      "id": 32,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "01:46"
+    },
+    {
+      "id": 33,
+      "speaker": "Speaker 1",
+      "text": "で、ちょっとエリザベスカラーも一応この、あの。",
+      "timestamp": "01:47"
+    },
+    {
+      "id": 34,
+      "speaker": "Speaker 2",
+      "text": "ああ、こういう感じですね。",
+      "timestamp": "01:52"
+    },
+    {
+      "id": 35,
+      "speaker": "Speaker 1",
+      "text": "はい、丸いやつ付けてもらって、その足の外れないように。",
+      "timestamp": "01:55"
+    },
+    {
+      "id": 36,
+      "speaker": "Speaker 2",
+      "text": "ああ、触らないように。",
+      "timestamp": "02:00"
+    },
+    {
+      "id": 37,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "02:02"
+    },
+    {
+      "id": 38,
+      "speaker": "Speaker 1",
+      "text": "はいはいはい。で、1週間ぐらいはなるべく安静にしてもらって。",
+      "timestamp": "02:03"
+    },
+    {
+      "id": 39,
+      "speaker": "Speaker 2",
+      "text": "この包帯つけていただいてるのずっとじゃあ1週間つける。",
+      "timestamp": "02:09"
+    },
+    {
+      "id": 40,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "02:13"
+    },
+    {
+      "id": 41,
+      "speaker": "Speaker 2",
+      "text": "特に付け替えたりとかしなくても。",
+      "timestamp": "02:14"
+    },
+    {
+      "id": 42,
+      "speaker": "Speaker 1",
+      "text": "うーん、まあそうですね。うんうん。",
+      "timestamp": "02:18"
+    },
+    {
+      "id": 43,
+      "speaker": "Speaker 2",
+      "text": "じゃ、特にこの1週間を気をつけと。",
+      "timestamp": "02:22"
+    },
+    {
+      "id": 44,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "02:25"
+    },
+    {
+      "id": 45,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "02:26"
+    },
+    {
+      "id": 46,
+      "speaker": "Speaker 2",
+      "text": "なんかその、基本家でも放し飼いにしてるんです。",
+      "timestamp": "02:27"
+    },
+    {
+      "id": 47,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "02:30"
+    },
+    {
+      "id": 48,
+      "speaker": "Speaker 2",
+      "text": "けど、ゲージの中に極力。",
+      "timestamp": "02:30"
+    },
+    {
+      "id": 49,
+      "speaker": "Speaker 1",
+      "text": "なるべくそうですね。極力入れてもらって。",
+      "timestamp": "02:32"
+    },
+    {
+      "id": 50,
+      "speaker": "Speaker 2",
+      "text": "なんかその、ゲージの中に入れちゃうとリスクだなって思うのは、その、2度びあって出してくれみたいななるって足にめっちゃ負担。",
+      "timestamp": "02:36"
+    },
+    {
+      "id": 51,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "02:45"
+    },
+    {
+      "id": 52,
+      "speaker": "Speaker 2",
+      "text": "行くんだったらもう放し飼いの方が良かったりするのかな。",
+      "timestamp": "02:46"
+    },
+    {
+      "id": 53,
+      "speaker": "Speaker 2",
+      "text": "あ、それするようだったら放した方がいいっていう感じです。",
+      "timestamp": "02:53"
+    },
+    {
+      "id": 54,
+      "speaker": "Speaker 1",
+      "text": "ああ、そうですね。",
+      "timestamp": "02:58"
+    },
+    {
+      "id": 55,
+      "speaker": "Speaker 1",
+      "text": "こっちもあれですけど。",
+      "timestamp": "03:00"
+    },
+    {
+      "id": 56,
+      "speaker": "Speaker 2",
+      "text": "はいはいはい。",
+      "timestamp": "03:03"
+    },
+    {
+      "id": 57,
+      "speaker": "Speaker 1",
+      "text": "パッケージを。",
+      "timestamp": "03:08"
+    },
+    {
+      "id": 58,
+      "speaker": "Speaker 2",
+      "text": "うーん、オーソドックスな対策と。",
+      "timestamp": "03:12"
+    },
+    {
+      "id": 59,
+      "speaker": "Speaker 1",
+      "text": "まあそうですね。",
+      "timestamp": "03:15"
+    },
+    {
+      "id": 60,
+      "speaker": "Speaker 1",
+      "text": "うーん。",
+      "timestamp": "03:16"
+    },
+    {
+      "id": 61,
+      "speaker": "Speaker 2",
+      "text": "なるほど。",
+      "timestamp": "03:17"
+    },
+    {
+      "id": 62,
+      "speaker": "Speaker 1",
+      "text": "で、痛み止めはそのまんま、はい、あの、先生の方で出してくれたやつは続けてもらって。",
+      "timestamp": "03:22"
+    },
+    {
+      "id": 63,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "03:28"
+    },
+    {
+      "id": 64,
+      "speaker": "Speaker 2",
+      "text": "外の散歩とかは1週間後とかもうやっていいの、それとも1ヶ月2ヶ月ぐらいは。",
+      "timestamp": "03:30"
+    },
+    {
+      "id": 65,
+      "speaker": "Speaker 1",
+      "text": "1週間ぐらいは多分。",
+      "timestamp": "03:36"
+    },
+    {
+      "id": 66,
+      "speaker": "Speaker 2",
+      "text": "2週間ぐらい。",
+      "timestamp": "03:38"
+    },
+    {
+      "id": 67,
+      "speaker": "Speaker 1",
+      "text": "はい。控えてもらった方がいいと。",
+      "timestamp": "03:38"
+    },
+    {
+      "id": 68,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "03:40"
+    },
+    {
+      "id": 69,
+      "speaker": "Speaker 2",
+      "text": "人体抜けってちょっと私が最初説明でまだ理解できてなかった、切れてるじゃないですか。",
+      "timestamp": "03:45"
+    },
+    {
+      "id": 70,
+      "speaker": "Speaker 2",
+      "text": "今今回正しいとこにつけて、この人体って結局どうなるんで、治るんですか。",
+      "timestamp": "03:52"
+    },
+    {
+      "id": 71,
+      "speaker": "Speaker 1",
+      "text": "は、えっと、そのまんまになるので。",
+      "timestamp": "03:57"
+    },
+    {
+      "id": 72,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "04:02"
+    },
+    {
+      "id": 73,
+      "speaker": "Speaker 1",
+      "text": "ま、それも、あの、えっと、まあ、そのまんま固定してれば収まって治ってくることもありますし。",
+      "timestamp": "04:03"
+    },
+    {
+      "id": 74,
+      "speaker": "Speaker 2",
+      "text": "ああ、はいはい。",
+      "timestamp": "04:14"
+    },
+    {
+      "id": 75,
+      "speaker": "Speaker 2",
+      "text": "なるほど。",
+      "timestamp": "04:17"
+    },
+    {
+      "id": 76,
+      "speaker": "Speaker 1",
+      "text": "なので、ま、繰り返すようだったらもうやっぱり手術した方がいいとは。",
+      "timestamp": "04:20"
+    },
+    {
+      "id": 77,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "04:26"
+    },
+    {
+      "id": 78,
+      "speaker": "Speaker 2",
+      "text": "分かりました。",
+      "timestamp": "04:28"
+    },
+    {
+      "id": 79,
+      "speaker": "Speaker 1",
+      "text": "うん。",
+      "timestamp": "04:29"
+    },
+    {
+      "id": 80,
+      "speaker": "Speaker 2",
+      "text": "ま、外れたの判断は前、あの、ま、手術前のようの状態になったら、あ、外れたな。",
+      "timestamp": "04:30"
+    },
+    {
+      "id": 81,
+      "speaker": "Speaker 1",
+      "text": "ま、そうですね。ちょっと怒ってたりとかしたらそうですね。",
+      "timestamp": "04:36"
+    },
+    {
+      "id": 82,
+      "speaker": "Speaker 2",
+      "text": "わかりました。ありがとうございます。",
+      "timestamp": "04:40"
+    },
+    {
+      "id": 83,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "04:42"
+    },
+    {
+      "id": 84,
+      "speaker": "Speaker 2",
+      "text": "あと、なんか気をつけといた方がいいなとかプラスがあったり。",
+      "timestamp": "04:44"
+    },
+    {
+      "id": 85,
+      "speaker": "Speaker 1",
+      "text": "まあそこぐらいっすかね。安静にしてもらうのと、あの、カラーしてて、あの、外さないようにしてもらう。",
+      "timestamp": "04:49"
+    },
+    {
+      "id": 86,
+      "speaker": "Speaker 2",
+      "text": "はいはい。",
+      "timestamp": "04:56"
+    },
+    {
+      "id": 87,
+      "speaker": "Speaker 1",
+      "text": "足のところですね。",
+      "timestamp": "04:57"
+    },
+    {
+      "id": 88,
+      "speaker": "Speaker 2",
+      "text": "カラーってなんかどこでも売ってる感じですかね？ペットショップとか。",
+      "timestamp": "04:59"
+    },
+    {
+      "id": 89,
+      "speaker": "Speaker 1",
+      "text": "あ、じゃあ今日病院でこちらからお出しします。",
+      "timestamp": "05:03"
+    },
+    {
+      "id": 90,
+      "speaker": "Speaker 2",
+      "text": "あ、いいですか。ぜひお願いします。",
+      "timestamp": "05:06"
+    },
+    {
+      "id": 91,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "05:07"
+    },
+    {
+      "id": 92,
+      "speaker": "Speaker 1",
+      "text": "ありがとうございます。",
+      "timestamp": "05:09"
+    },
+    {
+      "id": 93,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "05:10"
+    },
+    {
+      "id": 94,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "05:11"
+    },
+    {
+      "id": 95,
+      "speaker": "Speaker 1",
+      "text": "ちょっと多分少し動きづらいとは思いますけど、しばらく。",
+      "timestamp": "05:13"
+    },
+    {
+      "id": 96,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "05:17"
+    },
+    {
+      "id": 97,
+      "speaker": "Speaker 1",
+      "text": "ちょっとついてて。",
+      "timestamp": "05:18"
+    },
+    {
+      "id": 98,
+      "speaker": "Speaker 2",
+      "text": "これ今も痛いのは痛いって感じなんですかね。ニューメ線で。",
+      "timestamp": "05:19"
+    },
+    {
+      "id": 99,
+      "speaker": "Speaker 1",
+      "text": "多少痛いとは思います。",
+      "timestamp": "05:24"
+    },
+    {
+      "id": 100,
+      "speaker": "Speaker 1",
+      "text": "あの、ま、多分骨は戻ったんですけど、ま、多分その辺の筋肉だったりとか、そういうのは、あの、ま、伸びてたりとかするので。",
+      "timestamp": "05:26"
+    },
+    {
+      "id": 101,
+      "speaker": "Speaker 1",
+      "text": "ま、その辺は痛いとは思いますし。",
+      "timestamp": "05:40"
+    },
+    {
+      "id": 102,
+      "speaker": "Speaker 2",
+      "text": "ま、ただ、あの、手術前の外れてる時よりかはちょっといいと思います。",
+      "timestamp": "05:42"
+    },
+    {
+      "id": 103,
+      "speaker": "Speaker 1",
+      "text": "はい、ありがとうございます。",
+      "timestamp": "05:49"
+    },
+    {
+      "id": 104,
+      "speaker": "Speaker 2",
+      "text": "じゃあ、これで。",
+      "timestamp": "05:50"
+    },
+    {
+      "id": 105,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "05:53"
+    },
+    {
+      "id": 106,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "05:56"
+    },
+    {
+      "id": 107,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:00"
+    },
+    {
+      "id": 108,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:03"
+    },
+    {
+      "id": 109,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:06"
+    },
+    {
+      "id": 110,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:09"
+    },
+    {
+      "id": 111,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:12"
+    },
+    {
+      "id": 112,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:16"
+    },
+    {
+      "id": 113,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:20"
+    },
+    {
+      "id": 114,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:24"
+    },
+    {
+      "id": 115,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:28"
+    },
+    {
+      "id": 116,
+      "speaker": "Speaker 2",
+      "text": "これされた的にだけ注射されるんで、嫌な思い出しかないというか。",
+      "timestamp": "06:29"
+    },
+    {
+      "id": 117,
+      "speaker": "Speaker 1",
+      "text": "うーん、そうですね。ま、まだ。",
+      "timestamp": "06:34"
+    },
+    {
+      "id": 118,
+      "speaker": "Speaker 2",
+      "text": "へー。",
+      "timestamp": "06:39"
+    },
+    {
+      "id": 119,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:40"
+    },
+    {
+      "id": 120,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:44"
+    },
+    {
+      "id": 121,
+      "speaker": "Speaker 2",
+      "text": "カラー嫌いなんですね。",
+      "timestamp": "06:48"
+    },
+    {
+      "id": 122,
+      "speaker": "Speaker 2",
+      "text": "あの、普段しないんで、される時イコール注射かで、嫌なこと。",
+      "timestamp": "06:52"
+    },
+    {
+      "id": 123,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "06:58"
+    },
+    {
+      "id": 124,
+      "speaker": "Speaker 1",
+      "text": "ちょっと生活がしづらくなると思うんですけど。",
+      "timestamp": "07:05"
+    },
+    {
+      "id": 125,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:10"
+    },
+    {
+      "id": 126,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:12"
+    },
+    {
+      "id": 127,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:16"
+    },
+    {
+      "id": 128,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:20"
+    },
+    {
+      "id": 129,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:24"
+    },
+    {
+      "id": 130,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:28"
+    },
+    {
+      "id": 131,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:32"
+    },
+    {
+      "id": 132,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:36"
+    },
+    {
+      "id": 133,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:39"
+    },
+    {
+      "id": 134,
+      "speaker": "Speaker 2",
+      "text": "はい、大丈夫。",
+      "timestamp": "07:43"
+    },
+    {
+      "id": 135,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:44"
+    },
+    {
+      "id": 136,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "07:49"
+    },
+    {
+      "id": 137,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:51"
+    },
+    {
+      "id": 138,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "07:55"
+    },
+    {
+      "id": 139,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:00"
+    },
+    {
+      "id": 140,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:06"
+    },
+    {
+      "id": 141,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:06"
+    },
+    {
+      "id": 142,
+      "speaker": "Speaker 1",
+      "text": "こっちでもいいかもしれないけど、ちょっと。",
+      "timestamp": "08:09"
+    },
+    {
+      "id": 143,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:12"
+    },
+    {
+      "id": 144,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:16"
+    },
+    {
+      "id": 145,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:20"
+    },
+    {
+      "id": 146,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:25"
+    },
+    {
+      "id": 147,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:25"
+    },
+    {
+      "id": 148,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "08:29"
+    },
+    {
+      "id": 149,
+      "speaker": "Speaker 2",
+      "text": "はい、ありがとうございます。",
+      "timestamp": "08:31"
+    },
+    {
+      "id": 150,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "08:32"
+    },
+    {
+      "id": 151,
+      "speaker": "Speaker 1",
+      "text": "よいしょ。じゃあこれで。",
+      "timestamp": "08:34"
+    },
+    {
+      "id": 152,
+      "speaker": "Speaker 2",
+      "text": "お願いします。",
+      "timestamp": "08:38"
+    },
+    {
+      "id": 153,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:39"
+    },
+    {
+      "id": 154,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:49"
+    },
+    {
+      "id": 155,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:49"
+    },
+    {
+      "id": 156,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:52"
+    },
+    {
+      "id": 157,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "08:56"
+    },
+    {
+      "id": 158,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:00"
+    },
+    {
+      "id": 159,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:04"
+    },
+    {
+      "id": 160,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:07"
+    },
+    {
+      "id": 161,
+      "speaker": "Speaker 1",
+      "text": "はいはい。逆に。",
+      "timestamp": "09:07"
+    },
+    {
+      "id": 162,
+      "speaker": "Speaker 2",
+      "text": "逆につけない方がいい気がするんです。",
+      "timestamp": "09:12"
+    },
+    {
+      "id": 163,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:15"
+    },
+    {
+      "id": 164,
+      "speaker": "Speaker 1",
+      "text": "うーん。つけない方がいいですかね。",
+      "timestamp": "09:17"
+    },
+    {
+      "id": 165,
+      "speaker": "Speaker 1",
+      "text": "ま、家帰ってからつけます。",
+      "timestamp": "09:21"
+    },
+    {
+      "id": 166,
+      "speaker": "Speaker 1",
+      "text": "ま、でも。",
+      "timestamp": "09:24"
+    },
+    {
+      "id": 167,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:28"
+    },
+    {
+      "id": 168,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:30"
+    },
+    {
+      "id": 169,
+      "speaker": "Speaker 1",
+      "text": "あ、つけずにしてみてまた。",
+      "timestamp": "09:33"
+    },
+    {
+      "id": 170,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "09:36"
+    },
+    {
+      "id": 171,
+      "speaker": "Speaker 2",
+      "text": "あれですもんね。このつけとくと足触らないか、靴、足触ったりしないように。",
+      "timestamp": "09:40"
+    },
+    {
+      "id": 172,
+      "speaker": "Speaker 1",
+      "text": "そうですね。",
+      "timestamp": "09:48"
+    },
+    {
+      "id": 173,
+      "speaker": "Speaker 1",
+      "text": "はいはい。",
+      "timestamp": "09:49"
+    },
+    {
+      "id": 174,
+      "speaker": "Speaker 2",
+      "text": "うーん。一旦、あの、これ購入させてもらえ、しつつ、ま、ちょっと様子見て必要そうだったらつけるっていう形にしようと思います。",
+      "timestamp": "09:50"
+    },
+    {
+      "id": 175,
+      "speaker": "Speaker 2",
+      "text": "変に暴れて、逆に足が負担かかるかもしれないので。",
+      "timestamp": "10:00"
+    },
+    {
+      "id": 176,
+      "speaker": "Speaker 1",
+      "text": "ちょっと様子を見ていこうと思います。",
+      "timestamp": "10:07"
+    },
+    {
+      "id": 177,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "10:10"
+    },
+    {
+      "id": 178,
+      "speaker": "Speaker 2",
+      "text": "ありがとうございます。",
+      "timestamp": "10:11"
+    },
+    {
+      "id": 179,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:12"
+    },
+    {
+      "id": 180,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:19"
+    },
+    {
+      "id": 181,
+      "speaker": "Speaker 2",
+      "text": "はい、ありがとうございます。",
+      "timestamp": "10:22"
+    },
+    {
+      "id": 182,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:23"
+    },
+    {
+      "id": 183,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:28"
+    },
+    {
+      "id": 184,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "10:33"
+    },
+    {
+      "id": 185,
+      "speaker": "Speaker 1",
+      "text": "はい。",
+      "timestamp": "10:34"
+    },
+    {
+      "id": 186,
+      "speaker": "Speaker 1",
+      "text": "はい、分かっといて。",
+      "timestamp": "10:35"
+    },
+    {
+      "id": 187,
+      "speaker": "Speaker 2",
+      "text": "あ、いいですよ。はい。",
+      "timestamp": "10:38"
+    },
+    {
+      "id": 188,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "10:39"
+    },
+    {
+      "id": 189,
+      "speaker": "Speaker 1",
+      "text": "はい、分かりました。",
+      "timestamp": "10:40"
+    },
+    {
+      "id": 190,
+      "speaker": "Speaker 2",
+      "text": "はい。",
+      "timestamp": "10:42"
+    },
+    {
+      "id": 191,
+      "speaker": "Speaker 1",
+      "text": "(ペットの鳴き声)",
+      "timestamp": "10:43"
+    },
+    {
+      "id": 192,
+      "speaker": "Speaker 2",
+      "text": "(電子音)",
+      "timestamp": "11:21"
+    }
+  ]
+}
