@@ -7,10 +7,16 @@ targets:
     sources: [VoiceMemoApp]
     info:
       path: VoiceMemoApp/Info.plist
+      properties:
+        NSMicrophoneUsageDescription: 音声メモを録音するためにマイクを使用します
+        UIBackgroundModes:
+          - audio
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.example.VoiceMemoApp
       PRODUCT_NAME: VoiceMemoApp
       INFOPLIST_KEY_NSMicrophoneUsageDescription: 音声メモを録音するためにマイクを使用します
+      INFOPLIST_KEY_UIBackgroundModes:
+        - audio
       SUPPORTED_PLATFORMS: iphonesimulator iphoneos
       SUPPORTS_MACCATALYST: NO
       SWIFT_VERSION: "6.0"

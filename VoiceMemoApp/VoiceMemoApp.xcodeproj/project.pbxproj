@@ -173,6 +173,7 @@
 				DEVELOPMENT_TEAM = 9KQ6DBM8W6;
 				INFOPLIST_FILE = VoiceMemoApp/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声メモを録音するためにマイクを使用します";
+				INFOPLIST_KEY_UIBackgroundModes = audio;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -252,6 +253,7 @@
 				DEVELOPMENT_TEAM = 9KQ6DBM8W6;
 				INFOPLIST_FILE = VoiceMemoApp/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声メモを録音するためにマイクを使用します";
+				INFOPLIST_KEY_UIBackgroundModes = audio;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
