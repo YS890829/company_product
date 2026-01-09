@@ -4,7 +4,7 @@ import SwiftData
 @MainActor
 final class TranscriptionService {
     private let apiKey: String
-    private let model = "gemini-2.5-flash"
+    private let model = "gemini-2.5-flash-lite"
 
     private let fileAPIBaseURL = "https://generativelanguage.googleapis.com/upload/v1beta/files"
     private let geminiAPIBaseURL = "https://generativelanguage.googleapis.com/v1beta/models"
@@ -286,7 +286,7 @@ final class TranscriptionService {
     /// Gemini APIで文字起こしを実行
     nonisolated private func callGeminiAPI(fileUri: String, apiKey: String) async throws -> TranscriptResult {
         // URLを構築
-        guard var urlComponents = URLComponents(string: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent") else {
+        guard var urlComponents = URLComponents(string: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent") else {
             throw TranscriptionError.networkError(underlying: URLError(.badURL))
         }
         urlComponents.queryItems = [URLQueryItem(name: "key", value: apiKey)]
