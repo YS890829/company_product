@@ -122,26 +122,29 @@ final class TranscriptionService {
         // リクエストを構築
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("multipart/related; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
 
-        // multipart/related ボディを構築
+        // multipart/form-data ボディを構築
         var body = Data()
 
         // パート1: メタデータ (JSON)
         let metadata: [String: Any] = [
             "file": [
-                "displayName": audioURL.lastPathComponent
+                "displayName": audioURL.lastPathComponent,
+                "mimeType": "audio/mp4"
             ]
         ]
         let metadataJSON = try JSONSerialization.data(withJSONObject: metadata)
 
         body.append("--\(boundary)\r\n".data(using: .utf8)!)
-        body.append("Content-Type: application/json; charset=UTF-8\r\n\r\n".data(using: .utf8)!)
+        body.append("Content-Disposition: form-data; name=\"metadata\"\r\n".data(using: .utf8)!)
+        body.append("Content-Type: application/json\r\n\r\n".data(using: .utf8)!)
         body.append(metadataJSON)
         body.append("\r\n".data(using: .utf8)!)
 
         // パート2: ファイルデータ
         body.append("--\(boundary)\r\n".data(using: .utf8)!)
+        body.append("Content-Disposition: form-data; name=\"file\"; filename=\"\(audioURL.lastPathComponent)\"\r\n".data(using: .utf8)!)
         body.append("Content-Type: audio/mp4\r\n\r\n".data(using: .utf8)!)
         body.append(audioData)
         body.append("\r\n".data(using: .utf8)!)
