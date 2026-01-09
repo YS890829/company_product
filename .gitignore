@@ -3,3 +3,10 @@ build/
 DerivedData/
 *.xcuserstate
 .DS_Store
+
+# Environment files (prevent API key leaks)
+.env
+.env.*
+*.env
+.env.local
+.env.production
